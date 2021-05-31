@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is the Home
+    This is testimonial
   </div>
 </template>
 
@@ -8,3 +8,4 @@
 export default {};
 </script>
 <style></style>
+ 
