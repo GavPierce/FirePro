@@ -1,6 +1,6 @@
 <template>
   <div class="norbar">
-    I AM THE NORLAN BAR
+    I AM THE NORLAN SEQUEIRA.
   </div>
 </template>
 <script>
@@ -12,6 +12,7 @@ export default {
 .norbar {
   color: aquamarine;
   height: 100px;
+  padding-top: 3em;
   background-color: brown;
 }
 </style>
