@@ -1,20 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <Norlan />
-    <Norlan />
-    <Norlan />
-    <Norlan />
+    <Home />
   </div>
 </template>
 
 <script>
-import Norlan from "./components/Norlan.vue";
+import Home from "./pages/Home.vue";
 
 export default {
   name: "App",
   components: {
-    Norlan,
+    Home,
   },
 };
 </script>
