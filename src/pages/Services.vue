@@ -1,6 +1,6 @@
 <template>
   <div>
-    This is the Home
+    Services
   </div>
 </template>
 
