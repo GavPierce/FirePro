@@ -6,7 +6,9 @@ import Home from './pages/Home.vue';
 import ContactUs from './pages/ContactUs.vue';
 import Services from './pages/Services.vue';
 import Testimonial from './pages/Testimonial.vue'
-import Work from './pages/Work.vue'
+import Work from './pages/Work.vue';
+import phone from './pages/phone.vue'
+import { component } from 'vue/types/umd';
 Vue.config.productionTip = false
 Vue.use(VueRouter);
 const routes = [
@@ -15,7 +17,8 @@ const routes = [
   {path:  '/contact-us', component: ContactUs},
   {path:  '/Services', component: Services},
   {path: '/Testimonial', component: Testimonial},
-  {path: '/Work', component: Work}
+  {path: '/Work', component: Work},
+  {path: '/work', component: Work}
 ]
 
 const router = new VueRouter({
