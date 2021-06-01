@@ -1,7 +1,7 @@
 <template>
   <div class="Navmenu">
     <div class="item">
-      <router-link to="/Services"><strong>SERVICES</strong></router-link>
+      <router-link to="/Services">SERVICES</router-link>
     </div>
 
     <div class="item">
@@ -35,16 +35,17 @@ export default {};
   position: sticky;
 }
 .item {
+
   padding: 1em 0.5em;
-  font-weight: 600;
 }
 .phone {
-  background-color: orangered;
+  background-color: #FF6701;
   color: white;
   font-size: 1.3em;
   border-radius: 25px;
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   margin-left: 2em;
+  
 }
 a {
   text-decoration: none;
