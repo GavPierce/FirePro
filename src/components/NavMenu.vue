@@ -1,10 +1,8 @@
 <template>
   <div class="Navmenu">
-
     <div class="item">
-      <router-link to="/Services">SERVICES</router-link>
+      <router-link to="/Services"><strong>SERVICES</strong></router-link>
     </div>
-
     <div class="item">
       <router-link to="/about-us">ABOUT US</router-link>
     </div>
@@ -20,12 +18,7 @@
 </template>
 
 <script>
-export default {
-  data: function() {
-    return {
-    }
-  }
-};
+export default {};
 </script>
 <style>
 .Navmenu {
@@ -40,26 +33,22 @@ export default {
   margin: 1em 175px;
   position: sticky;
 }
-
 @media screen and (max-width: 1000px) {
   .Navmenu {
     display: none;
   }
 }
 .item {
-
   padding: 1em 0.5em;
- 
+  font-weight: 600;
 }
-
 .phone {
-  background-color: #FF6701;
+  background-color: orangered;
   color: white;
   font-size: 1.3em;
   border-radius: 25px;
-  padding: 0.7em 1em;
+  padding: 0.5em 1em;
   margin-left: 2em;
-  
 }
 a {
   text-decoration: none;
@@ -68,5 +57,4 @@ a {
 a:hover {
   color: orange;
 }
-
 </style>
