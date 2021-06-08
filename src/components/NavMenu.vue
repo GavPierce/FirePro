@@ -1,5 +1,6 @@
 <template>
   <div class="Navmenu">
+
     <div class="item">
       <router-link to="/Services">SERVICES</router-link>
     </div>
@@ -19,7 +20,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: function() {
+    return {
+    }
+  }
+};
 </script>
 <style>
 .Navmenu {
@@ -34,10 +40,18 @@ export default {};
   margin: 1em 175px;
   position: sticky;
 }
+
+@media screen and (max-width: 1000px) {
+  .Navmenu {
+    display: none;
+  }
+}
 .item {
 
   padding: 1em 0.5em;
+ 
 }
+
 .phone {
   background-color: #FF6701;
   color: white;
@@ -54,4 +68,5 @@ a {
 a:hover {
   color: orange;
 }
+
 </style>
