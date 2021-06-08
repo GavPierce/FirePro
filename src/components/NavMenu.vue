@@ -1,6 +1,8 @@
 <template>
   <div class="Navmenu">
 
+    <meta name="Icon" content="width=device-width, initial-scale=1">
+
     <div class="item">
       <router-link to="/Services">SERVICES</router-link>
     </div>
@@ -45,6 +47,10 @@ export default {
   .Navmenu {
     display: none;
   }
+}
+.icon {
+  display: inline-block;
+  cursor: pointer;
 }
 .item {
 
