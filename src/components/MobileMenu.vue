@@ -16,9 +16,21 @@
       </div>
     </div>
     <div class="list" :class="{ active: isOpen }">
-      <div class="item">Services</div>
-      <div class="item">Contact</div>
-      <div class="item">About</div>
+      <div class="item">
+        <router-link to="/Services">SERVICES</router-link> 
+        </div>
+      <div class="item">
+        <router-link to="/about-us">ABOUT US</router-link>
+        </div>
+      <div class="item">
+        <router-link to="/Work">WORK</router-link>
+      </div>  
+      <div class="item">
+        <router-link to="/Testimonial">TESTIMONIAL</router-link>
+      </div>
+      <div class="item">
+        <router-link to="/contact-us">CONTACT US</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -92,7 +104,7 @@ export default {
 .list {
   height: 0;
   position: relative;
-  top: -11em;
+  top: -19em;
   z-index: 1;
   transition: ease 0.5s;
   width: 100%;
