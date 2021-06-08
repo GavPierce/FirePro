@@ -13,7 +13,7 @@ export default {
 </script>
 <style>
 .wrapper {
-  margin: 0 0 0 12em;
+  z-index: -2;
 }
 .intro {
   height: 50vh;

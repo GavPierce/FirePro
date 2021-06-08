@@ -1,0 +1,113 @@
+<template>
+  <div class="container">
+    <div class="menu">
+      <div>LOGO</div>
+      <div>
+        <div
+          class="hamburger"
+          :class="{ open: isOpen }"
+          id="hamburger-6"
+          v-on:click="isOpen = !isOpen"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+    <div class="list" :class="{ active: isOpen }">
+      <div class="item">Services</div>
+      <div class="item">Contact</div>
+      <div class="item">About</div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      isOpen: false,
+    };
+  },
+};
+</script>
+<style>
+.open span {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#hamburger-6.open .line:nth-child(2) {
+  width: 0px;
+}
+
+#hamburger-6.open .line:nth-child(1),
+#hamburger-6.open .line:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+#hamburger-6.open .line:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px) rotate(135deg);
+}
+
+#hamburger-6.open .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(90deg);
+  -ms-transform: translateY(-13px) rotate(90deg);
+  -o-transform: translateY(-13px) rotate(90deg);
+  transform: translateY(-13px) rotate(45deg);
+}
+
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: orangered;
+}
+.list {
+  height: 0;
+  position: relative;
+  top: -11em;
+  z-index: 1;
+  transition: ease 0.5s;
+  width: 100%;
+  text-align: center;
+}
+.list .item {
+  background-color: white;
+}
+.list.active {
+  top: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    display: none;
+  }
+}
+</style>
