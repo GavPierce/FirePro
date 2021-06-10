@@ -14,6 +14,28 @@
       <router-link to="/contact-us">CONTACT US</router-link>
     </div>
     <div class="phone">805-487-1477</div>
+
+  <div class="box">
+    <div class="top-bar">    
+      <h3>REQUEST A QUOTE</h3>
+      <div class="close">X</div>
+    </div>
+    <h6>Contact us for a no obligation</h6>
+    <h6>quote by phoning</h6>
+    <h4>805-487-1477</h4>
+    <h6>Or complete the form below</h6>
+  
+        <div class="label">Name:</div>
+        <input type="text"  ><br><br>
+        <div class="label">Telephone:</div>
+        <input type="text"><br><br>
+        <div class="label">Email:</div>
+        <input type="text" ><br><br>
+        <div class="label">Message:</div>
+        <input class="Message" type="text"><br><br>
+        <div class="Buttom">SUBMIT</div>
+  </div>
+  
   </div>
 </template>
 
@@ -67,4 +89,64 @@ a {
 a:hover {
   color: orange;
 }
+.top-bar {
+  display: flex;
+text-align: center;
+justify-content: center;
+padding-top: 1em;
+}
+
+.close {
+  position: relative;
+  right: -6em;
+  top: 1.4em;
+}
+.box{
+  background-color: #FF6701;
+  height:26em;
+  width: 27em ;
+  position: fixed;
+  left: calc(50% - 12.5em);
+  top: calc(50% - 10em);
+  line-height:0;
+  margin: 0;
+  padding: 2 em;
+  border-radius:2em;
+  color: #FFFFFF
+  
+  
+  
+}
+input {
+  width: 60%;
+  padding: 3px 2px;
+  margin: 9px 0;
+  border-radius: 25ex;
+  border:0
+  
+  
+}
+.Message
+{
+  width: 60%;
+  height: 70px;
+  padding: 3px 2px;
+  border-radius: 30px;
+  resize: none;
+}
+  .label {
+    text-align: left;
+    margin-left:9em;
+    font-size: .60em;
+    color: #FFFFFF;
+  }
+.Buttom {
+  color: #FFFFFF;
+  font-size: .80em;
+}
+
+
+
+
+
 </style>
