@@ -37,13 +37,19 @@ export default {};
   .Navmenu {
     display: none;
   }
+  }
+@media screen and (max-width: 1070px) {
+  .Navmenu .phone {
+   padding-top: .75em   ;
+   font-size: 0.9em;
+  }
 }
 .icon {
   display: inline-block;
   cursor: pointer;
 }
 .item {
-  padding: 1em 0.5em;
+  padding: 0.6em 0.5em;
   font-weight: 600;
 }
 .phone {
@@ -51,7 +57,7 @@ export default {};
   color: white;
   font-size: 1.3em;
   border-radius: 25px;
-  padding: 0.5em 1em;
+  padding: 0.3em 1em 0 1em;
   margin-left: 2em;
 }
 a {

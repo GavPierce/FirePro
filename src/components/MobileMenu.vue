@@ -120,6 +120,11 @@ export default {
 @media screen and (min-width: 1000px) {
   .container {
     display: none;
-  }
+  } 
 }
+.hamburger{
+  cursor: pointer;
+}
+
+
 </style>
