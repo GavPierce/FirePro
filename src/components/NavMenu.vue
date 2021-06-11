@@ -13,12 +13,12 @@
     <div class="item">
       <router-link to="/contact-us">CONTACT US</router-link>
     </div>
-    <div class="phone">805-487-1477</div>
+    <div class="phone" @click="showBox=true">805-487-1477</div>
 
-  <div class="box">
+  <div class="box" v-if="showBox">
     <div class="top-bar">    
       <h3>REQUEST A QUOTE</h3>
-      <div class="close">X</div>
+      <div class="close" @click="showBox=false">X</div>
     </div>
     <h6>Contact us for a no obligation</h6>
     <h6>quote by phoning</h6>
@@ -40,7 +40,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data () {
+    return {
+      showBox: false
+    }
+  }
+};
 </script>
 <style>
 .Navmenu {
