@@ -17,19 +17,19 @@
     </div>
     <div class="list" :class="{ active: isOpen }">
      
-      <div class="item">
+      <div class="item" v-on:click="isOpen=false">
         <router-link to="/Services">SERVICES</router-link> 
         </div>
-      <div class="item">
+      <div class="item" v-on:click="isOpen=false">
         <router-link to="/about-us">ABOUT US</router-link>
         </div>
-      <div class="item">
+      <div class="item" v-on:click="isOpen=false">
         <router-link to="/Work">WORK</router-link>
       </div>  
-      <div class="item">
+      <div class="item" v-on:click="isOpen=false">
         <router-link to="/Testimonial">TESTIMONIAL</router-link>
       </div>
-      <div class="item">
+      <div class="item" v-on:click="isOpen=false">
         <router-link to="/contact-us">CONTACT US</router-link>
       </div>
     </div>
