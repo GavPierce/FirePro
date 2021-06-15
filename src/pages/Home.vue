@@ -1,12 +1,15 @@
 <template>
   <div class="wrapper">
-    <div class="title"> </div>
-    <div class="safe"> </div>
-    <div class="button"> </div>
+    <img class="background" src="../assets/img/home-background.png" alt="" />
+    <div class="title"> KEEP FACILITIES AND <br> OCCUPANTS   </div>
+    <div class="safe"> SAFE </div>
+    <div class="button">REQUEST A QUOTE </div>
     <div class="certificates">
-      <div class="calfire"></div>
-      <div class="experience"></div>
-      <div class="amerex"></div>
+      <img class="image1" src="../assets/certs/calfire.png" alt=""/>
+      <img class="image2" src="../assets/certs/experience.svg" alt=""/>
+      <img class="image3" src="../assets/certs/amerex.png" alt=""/>
+      
+      
     </div>
       </div>
 
@@ -21,64 +24,64 @@ export default {
 <style>
 .wrapper {
   z-index: -2;
-  margin-left: 6em;
+  margin-left:2em;
+  text-align: justify;
+  font-size: 60px;
+  position: relative;
 }
 
 .title{
-background-color: #000000;
+color: #000000;
 width: 25em;
-margin-top: 15em;
+margin-top: -10em;
 height: 10em;
 }
 
 .safe {
-background-color:#FEA82F;
+color:#FEA82F;
 width: 9em;
 height: 2em;
-margin-top: 1em;
+margin-top:-7em;
 
 }
 
 .button{
 background-color: #FF6701;
+color: #F4F0EA;
+font-size: 30px;
 width: 9em;
-height: 2em;;
-margin-top: 3em;
-padding-right:25px;
-margin-left: 5em;
+height:2em;
+margin-top: 1em;
+margin-left: 2em;
+border-radius: 33px;
+padding: 0.3em 1em 0 1em;
 }
 
 .certificates{
-background-color: blueviolet;
-width: 35em;
-margin-top:2em;
-margin-left: 5em;
+margin-top: 1em;
 display:flex;
+}
+.image1{
+  height:2em;
+  width: 2em;
+}
+.image2{
+  margin-left:80px;
+  height:2em;
+  width: 2em;
+}
+.image3{
+   margin-left:80px;
+   height:2em;
+   width: 2em;
+}
+.background{
+  
+margin-left:11em;
+width: 500px;
+height: 800px;
+background-color:transparent;
+margin-top: -1.5em;
 
 }
-
-.calfire{
-background-color: green;
-width: 10em;
-height: 6em;
-margin-bottom: 5em;
-margin-left: 2.5em;
-float: left;
-}
-.experience{
-background-color:black;
-width: 10em;
-height: 6em;
-margin-bottom: 5em;
-float: left;
-}
-.amerex{
-background-color:pink;
-width: 10em;
-height: 6em;
-margin-bottom: 5em;
-float: left;
-}
-
-
 </style>
