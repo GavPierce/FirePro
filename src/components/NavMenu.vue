@@ -17,7 +17,7 @@
 
   <div class="box" v-if="showBox">
     <div class="top-bar">    
-      <h3>REQUEST A QUOTE</h3>
+      <h3>REQUEST A QUOTE </h3>
       <div class="close" @click="showBox=false">X</div>
     </div>
     <h6>Contact us for a no obligation</h6>
@@ -87,6 +87,7 @@ export default {
   border-radius: 25px;
   padding: 0.3em 1em 0 1em;
   margin-left: 2em;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -106,6 +107,7 @@ padding-top: 1em;
   position: relative;
   right: -6em;
   top: 1.4em;
+  cursor: pointer;
 }
 .box{
   background-color: #FF6701;
@@ -119,6 +121,7 @@ padding-top: 1em;
   padding: 2 em;
   border-radius:2em;
   color: #FFFFFF
+  
   
   
   
@@ -149,6 +152,7 @@ input {
 .Buttom {
   color: #FFFFFF;
   font-size: .80em;
+  cursor: pointer;
 }
 
 

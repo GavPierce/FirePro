@@ -30,12 +30,12 @@
         <router-link to="/Testimonial">TESTIMONIAL</router-link>
       </div>
       <div class="item" v-on:click="isOpen=false">
-        <router-link to="/contact-us">CONTACT US</router-link>
-        <div class="number" v-on:click="showBox = true">
-         805-487-1477</div>
-                 
-
+        <router-link to="/contact-us">CONTACT US</router-link> 
       </div>
+      <div class="item number" v-on:click="showBox = true">
+         805-487-1477
+         </div>
+
 
       <div class="box" v-if="showBox">
     <div class="top-bar">    
@@ -144,13 +144,14 @@ export default {
   background-color: white;
 }
 .number{
-  background-color: orangered;
+  background-color: orangered !important;
   color: white;
   font-size: 1em;
   border-radius: 15px;
-  padding: 0.3em 1em 0 1em;
-  margin-left: 22.80em;
-  width:12em;
+ padding: 10px;
+  cursor: pointer;
+  margin-left: 30%;
+  margin-right: 30%;
   
 }
 .list.active {
