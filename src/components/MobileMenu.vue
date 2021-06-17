@@ -31,7 +31,33 @@
       </div>
       <div class="item" v-on:click="isOpen=false">
         <router-link to="/contact-us">CONTACT US</router-link>
+        <div class="number" v-on:click="showBox = true">
+         805-487-1477</div>
+                 
+
       </div>
+
+      <div class="box" v-if="showBox">
+    <div class="top-bar">    
+      <h3>REQUEST A QUOTE</h3>
+      <div class="close" @click="showBox=false">X</div>
+    </div>
+      <h6>Contact us for a no obligation</h6>
+      <h6>quote by calling</h6>
+     <h4>805-487-1477</h4>
+     <h6>Or complete the form below</h6>
+
+    <div class="label">Name:</div>
+        <input type="text"  ><br><br>
+        <div class="label">Telephone:</div>
+        <input type="text"><br><br>
+        <div class="label">Email:</div>
+        <input type="text" ><br><br>
+        <div class="label">Message:</div>
+        <input class="Message" type="text"><br><br>
+        <div class="Buttom">SUBMIT</div>
+  </div>
+      
     </div>
   </div>
   
@@ -42,7 +68,9 @@ export default {
   data: function() {
     return {
       isOpen: false,
-    };
+      showBox:false,
+      
+    }
   },
 };
 </script>
@@ -115,6 +143,16 @@ export default {
 .list .item {
   background-color: white;
 }
+.number{
+  background-color: orangered;
+  color: white;
+  font-size: 1em;
+  border-radius: 15px;
+  padding: 0.3em 1em 0 1em;
+  margin-left: 22.80em;
+  width:12em;
+  
+}
 .list.active {
   top: 0;
 }
@@ -127,6 +165,21 @@ export default {
 .hamburger{
   cursor: pointer;
 }
+.box{
+  background-color: #FF6701;
+  height:26em;
+  width: 27em ;
+  position: fixed;
+  left: calc(50% - 12.5em);
+  top: calc(50% - 10em);
+  line-height:0;
+  margin: 0;
+  padding: 2 em;
+  border-radius:2em;
+  color: #FFFFFF
+  
+}
+
 
 
 </style>

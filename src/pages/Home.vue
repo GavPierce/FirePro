@@ -1,17 +1,23 @@
 <template>
   <div class="wrapper">
-    <img class="background" src="../assets/img/home-background.png" alt="" />
-    <div class="title"> KEEP FACILITIES AND <br> OCCUPANTS   </div>
-    <div class="safe"> SAFE </div>
-    <div class="button">REQUEST A QUOTE </div>
-    <div class="certificates">
-      <img class="image1" src="../assets/certs/calfire.png" alt=""/>
-      <img class="image2" src="../assets/certs/experience.svg" alt=""/>
-      <img class="image3" src="../assets/certs/amerex.png" alt=""/>
-      
-      
-    </div>
-      </div>
+    <div class="left">
+      <div class="title"> KEEP FACILITIES AND <br> OCCUPANTS   </div>
+      <div class="safe"> SAFE </div>
+      <div class="button">REQUEST A QUOTE </div>
+      <div class="certificates">
+       <img class="image1" src="../assets/certs/calfire.png" alt=""/>
+        <img class="image2" src="../assets/certs/experience.svg" alt=""/>
+        <img class="image3" src="../assets/certs/amerex.png" alt=""/>
+        <img class="leaves1" src="../assets/certs/leaves.svg" alt=""/>
+        <img class="leaves2" src="../assets/certs/leaves.svg" alt=""/>    
+        <img class="leaves3" src="../assets/certs/leaves.svg" alt=""/>   
+      </div>      
+  </div>
+  <div class="right">
+    <img class="background" src="../assets/img/home-background.png" alt="" /> 
+  </div>
+</div>
+    
 
 
 </template>
@@ -24,17 +30,20 @@ export default {
 <style>
 .wrapper {
   z-index: -2;
-  margin-left:2em;
+  padding-left:2em ;
   text-align: justify;
   font-size: 60px;
   position: relative;
+  display: flex;
+  overflow: hidden;
+  top:-2em;
 }
 
 .title{
 color: #000000;
 width: 25em;
-margin-top: -10em;
 height: 10em;
+padding-top: 4em;
 }
 
 .safe {
@@ -51,7 +60,6 @@ color: #F4F0EA;
 font-size: 30px;
 width: 9em;
 height:2em;
-margin-top: 1em;
 margin-left: 2em;
 border-radius: 33px;
 padding: 0.3em 1em 0 1em;
@@ -60,28 +68,63 @@ padding: 0.3em 1em 0 1em;
 .certificates{
 margin-top: 1em;
 display:flex;
+position: relative;
+
 }
 .image1{
   height:2em;
   width: 2em;
+  
+}
+.leaves1{
+  height:3em;
+  width: 4em;
+  position: absolute;
+  left:-60px;
+  bottom:-30px;
 }
 .image2{
-  margin-left:80px;
+  margin-left:102px;
   height:2em;
   width: 2em;
 }
+.leaves2{
+  height:3em;
+  width: 4em;
+  position: absolute;
+  left:160px;
+  bottom:-30px;
+}
 .image3{
-   margin-left:80px;
+   margin-left:100px;
    height:2em;
    width: 2em;
 }
+.leaves3{
+  height:3em;
+  width: 4em;
+  position: absolute;
+  left:380px;
+  bottom:-30px;
+}
 .background{
   
-margin-left:11em;
 width: 500px;
 height: 800px;
 background-color:transparent;
-margin-top: -1.5em;
+object-fit: cover;
+margin-left: 2em;
 
+
+
+
+
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+  
 }
 </style>
