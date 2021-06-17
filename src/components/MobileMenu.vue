@@ -148,7 +148,7 @@ export default {
   color: white;
   font-size: 1em;
   border-radius: 15px;
- padding: 10px;
+  padding: 10px;
   cursor: pointer;
   margin-left: 30%;
   margin-right: 30%;
@@ -162,6 +162,12 @@ export default {
   .container {
     display: none;
   } 
+}
+
+@media (max-width:1050px) {
+  .background {
+    display: none;
+  }
 }
 .hamburger{
   cursor: pointer;
