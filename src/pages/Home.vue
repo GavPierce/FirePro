@@ -73,38 +73,38 @@ position: relative;
 }
 .image1{
   height:2em;
-  width: 2em;
-  
+max-width: 93px;
+margin-left:-25px;  
 }
 .leaves1{
   height:3em;
-  width: 4em;
+  width: 3em;
   position: absolute;
-  left:-60px;
+  left:-70px;
   bottom:-30px;
 }
 .image2{
-  margin-left:102px;
+  margin-left:125px;
   height:2em;
-  width: 2em;
+max-width: 93px;  
 }
 .leaves2{
   height:3em;
-  width: 4em;
+  width: 3em;
   position: absolute;
-  left:160px;
+  left: 150px;
   bottom:-30px;
 }
 .image3{
    margin-left:100px;
    height:2em;
-   width: 2em;
+max-width: 95px;  
 }
 .leaves3{
   height:3em;
-  width: 4em;
+  width: 3em;
   position: absolute;
-  left:380px;
+  left:350px;
   bottom:-30px;
 }
 .background{
@@ -114,17 +114,19 @@ height: 800px;
 background-color:transparent;
 object-fit: cover;
 margin-left: 2em;
-
-
-
-
-
 }
 .left{
   width: 50%;
 }
 .right{
   width: 50%;
-  
 }
+
+@media (max-width:1050px) {
+  .right {
+    display: none;
+  }
+}
+
+
 </style>

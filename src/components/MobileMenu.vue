@@ -61,7 +61,7 @@ export default {
 
 
 </script>
-<style>
+<style scoped>
 .open span {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -152,11 +152,7 @@ export default {
   } 
 }
 
-@media (max-width:1050px) {
-  .background {
-    display: none;
-  }
-}
+
 .hamburger{
   cursor: pointer;
 }
