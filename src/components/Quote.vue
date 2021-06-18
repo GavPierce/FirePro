@@ -1,9 +1,9 @@
 <template>
     <div>
-<div class="box" v-if="showBox">
+<div class="box">
     <div class="top-bar">    
       <h3>REQUEST A QUOTE</h3>
-      <div class="close" @click="showBox=false">X</div>
+      <div class="close" v-on:click="close">X</div>
     </div>
       <h6>Contact us for a no obligation</h6>
       <h6>quote by calling</h6>
@@ -30,6 +30,11 @@ export default {
   data () {
     return {
       showBox: false
+    }
+  },
+  methods: {
+    close () {
+      this.$emit('showQuote', false);
     }
   }
 };

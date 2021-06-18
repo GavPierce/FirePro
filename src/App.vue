@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <NavMenu />
-    <MobileMenu />
+    <NavMenu  @showQuote="toggleQuoteBox" />
+    <MobileMenu @showQuote="toggleQuoteBox" />
+    <Quoteform @showQuote="toggleQuoteBox" v-if="showQuote"/>
     <router-view />
   </div>
 </template>
@@ -9,12 +10,26 @@
 <script>
 import NavMenu from "./components/NavMenu";
 import MobileMenu from "./components/MobileMenu.vue";
+import Quoteform from "./components/Quote.vue";
 export default {
   name: "App",
+
+    data () {
+    return {
+      showQuote: true
+    }
+  },
   components: {
     NavMenu,
     MobileMenu,
+    Quoteform,
   },
+  methods: {
+    toggleQuoteBox(info) {
+      console.log('Emit heard');
+      this.showQuote = info;
+    }
+  }
 };
 </script>
 
