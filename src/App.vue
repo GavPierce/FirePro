@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <NavMenu  @showQuote="toggleQuoteBox" />
+    <NavMenu @showQuote="toggleQuoteBox" />
     <MobileMenu @showQuote="toggleQuoteBox" />
-    <Quoteform @showQuote="toggleQuoteBox" v-if="showQuote"/>
-    <router-view />
+    <Quoteform @showQuote="toggleQuoteBox" v-if="showQuote" />
+    <router-view @showQuote="toggleQuoteBox" />
   </div>
 </template>
 
@@ -14,19 +14,19 @@ import Quoteform from "./components/Quote.vue";
 export default {
   name: "App",
 
-    data () {
+  data() {
     return {
-      showQuote: true
-    }
+      showQuote: false
+    };
   },
   components: {
     NavMenu,
     MobileMenu,
-    Quoteform,
+    Quoteform
   },
   methods: {
     toggleQuoteBox(info) {
-      console.log('Emit heard');
+      console.log("Emit heard!");
       this.showQuote = info;
     }
   }

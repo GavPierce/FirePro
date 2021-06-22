@@ -15,51 +15,45 @@
         </div>
       </div>
     </div>
-  
 
     <div class="list" :class="{ active: isOpen }">
-     
-      <div class="item" v-on:click="isOpen=false">
-        <router-link to="/Services">SERVICES</router-link> 
-        </div>
-      <div class="item" v-on:click="isOpen=false">
+      <div class="item" v-on:click="isOpen = false">
+        <router-link to="/Services">SERVICES</router-link>
+      </div>
+      <div class="item" v-on:click="isOpen = false">
         <router-link to="/about-us">ABOUT US</router-link>
-        </div>
-      <div class="item" v-on:click="isOpen=false">
+      </div>
+      <div class="item" v-on:click="isOpen = false">
         <router-link to="/Work">WORK</router-link>
-      </div>  
-      <div class="item" v-on:click="isOpen=false">
+      </div>
+      <div class="item" v-on:click="isOpen = false">
         <router-link to="/Testimonial">TESTIMONIAL</router-link>
       </div>
-      <div class="item" v-on:click="isOpen=false">
-        <router-link to="/contact-us">CONTACT US</router-link> 
+      <div class="item" v-on:click="isOpen = false">
+        <router-link to="/contact-us">CONTACT US</router-link>
       </div>
-      <div class="item number" v-on:click="open">
-         805-487-1477
+      <div class="item number" v-on:click="open, (isOpen = false)">
+        805-487-1477
       </div>
-      </div>
-</div>
-  
-  </template>
+    </div>
+  </div>
+</template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       isOpen: false,
-      showBox:false,
-    }    
+      showBox: false
+    };
   },
 
   methods: {
     open() {
-      this.$emit('showQuote', true);
+      this.$emit("showQuote", true);
     }
   }
 };
-
-
-
 </script>
 <style scoped>
 .open span {
@@ -113,25 +107,25 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 2em;
-  width:95%;
+  width: 95%;
   z-index: 1;
   color: white;
   background-color: orangered;
-  
 }
 .list {
   height: 0;
   position: relative;
   top: -24em;
-  z-index:-2;
+  z-index: -2;
   transition: ease 0.5s;
   width: 100%;
   text-align: center;
+  z-index: 99;
 }
 .list .item {
   background-color: white;
 }
-.number{
+.number {
   background-color: orangered !important;
   color: white;
   font-size: 1em;
@@ -140,7 +134,6 @@ export default {
   cursor: pointer;
   margin-left: 30%;
   margin-right: 30%;
-  
 }
 .list.active {
   top: 0;
@@ -149,15 +142,15 @@ export default {
 @media screen and (min-width: 1000px) {
   .container {
     display: none;
-  } 
+  }
 }
 
-
-.hamburger{
+.hamburger {
   cursor: pointer;
 }
-.container{
+.container {
   position: fixed;
   width: 98%;
+  z-index: 99;
 }
 </style>

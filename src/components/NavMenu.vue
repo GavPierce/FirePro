@@ -1,5 +1,6 @@
 <template>
   <div class="Navmenu">
+    <img class="mainlogo" src="../assets/certs/logo.png" alt="" />
     <div class="item">
       <router-link to="/Services"><strong>SERVICES</strong></router-link>
     </div>
@@ -14,28 +15,18 @@
       <router-link to="/contact-us">CONTACT US</router-link>
     </div>
     <div class="phone" v-on:click="open">805-487-1477</div>
-
-  
   </div>
-  
 </template>
 
 <script>
-    export default 
-  {
-    methods:{
-
-open (){
-  console.log('hi there')
-  this.$emit('showQuote', true)
-}
-}
+export default {
+  methods: {
+    open() {
+      console.log("hi there");
+      this.$emit("showQuote", true);
+    }
   }
-
-
-
-
-
+};
 </script>
 <style>
 .Navmenu {
@@ -49,16 +40,17 @@ open (){
   top: 1em;
   margin: 1em 175px;
   position: sticky;
+  z-index: 99;
 }
 @media screen and (max-width: 1000px) {
   .Navmenu {
     display: none;
   }
-  }
+}
 @media screen and (max-width: 1070px) {
   .Navmenu .phone {
-   padding-top: .75em   ;
-   font-size: 0.9em;
+    padding-top: 0.75em;
+    font-size: 0.9em;
   }
 }
 .icon {
@@ -87,9 +79,9 @@ a:hover {
 }
 .top-bar {
   display: flex;
-text-align: center;
-justify-content: center;
-padding-top: 1em;
+  text-align: center;
+  justify-content: center;
+  padding-top: 1em;
 }
 
 .close {
@@ -104,32 +96,30 @@ input {
   padding: 3px 2px;
   margin: 9px 0;
   border-radius: 25ex;
-  border:0
-  
-  
+  border: 0;
 }
-.Message
-{
+.Message {
   width: 60%;
   height: 70px;
   padding: 3px 2px;
   border-radius: 30px;
   resize: none;
 }
-  .label {
-    text-align: left;
-    margin-left:9em;
-    font-size: .60em;
-    color: #FFFFFF;
-  }
+.label {
+  text-align: left;
+  margin-left: 9em;
+  font-size: 0.6em;
+  color: #ffffff;
+}
 .Buttom {
-  color: #FFFFFF;
-  font-size: .80em;
+  color: #ffffff;
+  font-size: 0.8em;
   cursor: pointer;
 }
 
-
-
-
-
+.mainlogo {
+  margin-right: 255px;
+  height: 40px;
+  margin-top: 3px;
+}
 </style>
