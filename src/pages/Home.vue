@@ -32,6 +32,13 @@
       <div class="offer4">KITCHEN SUPPRESION</div>
       <div class="offer5">BACKFLOW</div>
     </div>
+    <div class="boxoffer">
+      <div class="rectangule">
+        <p>WE OFFER PROFESIONAL FIRE PROTECTION SERVICES</p>
+      </div>
+
+      <div class="triangle">REQUEST A QUOTE</div>
+    </div>
   </div>
 </template>
 
@@ -145,46 +152,65 @@ export default {
   display: flex;
   position: relative;
   margin-right: 80px;
-  text-align: left;
+  text-align: inherit;
   background: white;
   color: #000000;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .offer1 {
   width: 230px;
-  height: 150px;
+  height: 190px;
   margin-left: 40px;
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
+  border-radius: 40px;
 }
 .offer2 {
   width: 230px;
-  height: 150px;
+  height: 190px;
   margin-left: 60px;
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
+  border-radius: 40px;
 }
 .offer3 {
   width: 230px;
-  height: 150px;
+  height: 190px;
   margin-left: 60px;
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
+  border-radius: 40px;
 }
 
 .offer4 {
   width: 230px;
-  height: 150px;
+  height: 190px;
   margin-left: 60px;
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
+  border-radius: 40px;
 }
 
 .offer5 {
   width: 230px;
-  height: 150px;
+  height: 190px;
   margin-left: 60px;
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
+  border-radius: 40px;
+}
+.boxoffer {
+  position: relative;
+  margin-top: 5em;
+}
+.rectangule {
+  width: 500px;
+  height: 200px;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent;
+}
+.rectangule p {
+  position: absolute;
+  top: 1em;
 }
 </style>
