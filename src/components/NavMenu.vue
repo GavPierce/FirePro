@@ -35,22 +35,24 @@ export default {
   background: white;
   box-shadow: 5px 10px 20px #b8b7b7;
   display: flex;
-  
   text-decoration: none;
   top: 1em;
   margin: 1em 175px;
   position: sticky;
   z-index: 99;
+  width: 80%;
+  align-items: center;
+  font-size: 15px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1314px) {
   .Navmenu {
     display: none;
   }
 }
 @media screen and (max-width: 1070px) {
   .Navmenu .phone {
-    padding-top: 0.75em;
-    font-size: 0.9em;
+    padding-top: 1em;
+    font-size: 0em;
   }
 }
 .icon {
@@ -66,7 +68,7 @@ export default {
   color: white;
   font-size: 1.3em;
   border-radius: 25px;
-  padding: 0.3em 1em 0 1em;
+  padding: 0.85em 1.5em;
   margin-left: 2em;
   cursor: pointer;
 }
@@ -118,8 +120,8 @@ input {
 }
 
 .mainlogo {
-  margin-right: 255px;
-  height: 40px;
+  margin-right: 300px;
+  height: 60px;
   margin-top: 3px;
 }
 </style>

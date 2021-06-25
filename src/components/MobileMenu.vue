@@ -106,7 +106,7 @@ export default {
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 2.5em;
   width: 95%;
   z-index: 1;
   color: white;
@@ -120,7 +120,6 @@ export default {
   transition: ease 0.5s;
   width: 100%;
   text-align: center;
-  z-index: 99;
 }
 .list .item {
   background-color: white;
@@ -139,7 +138,7 @@ export default {
   top: 0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1314px) {
   .container {
     display: none;
   }

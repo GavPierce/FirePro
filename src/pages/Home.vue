@@ -23,7 +23,6 @@
           src="../assets/img/home-background.png"
           alt=""
         />
-        
       </div>
     </div>
     <div class="offers">
@@ -35,16 +34,20 @@
     </div>
     <div class="boxoffer">
       <div class="rectangule">
-        <p style="font-size:2vw;">WE OFFER PROFESIONAL FIRE PROTECTION SERVICES</p>
+        <div class="textoffer">
+          <p style="font-size:2vw;">
+            WE OFFER PROFESIONAL FIRE PROTECTION SERVICES
+          </p>
         </div>
-        
-        <div class="triangle">
-        <p v-on:click="open" style="font-size:2vw;">REQUEST A QUOTE</p>
-        </div>
+      </div>
 
+      <div class="triangle" v-on:click="open">
+        <div class="textoffer2">
+          <p style="font-size:2vw;">REQUEST A QUOTE</p>
+        </div>
       </div>
     </div>
-  
+  </div>
 </template>
 
 <script>
@@ -59,7 +62,7 @@ export default {
 </script>
 <style>
 .top {
-  padding-left: 2em;
+  padding-left: 1em;
   text-align: justify;
   font-size: 60px;
   position: relative;
@@ -70,10 +73,13 @@ export default {
 
 .title {
   color: #000000;
-
   padding-top: 4em;
 }
-
+@media (min-width: 1287px) {
+  .title .safe {
+    float: right;
+  }
+}
 .safe {
   color: #fea82f;
 }
@@ -98,6 +104,7 @@ export default {
   position: relative;
   margin-left: 1.1em;
 }
+
 .image1 {
   height: 120px;
   max-width: 93px;
@@ -135,10 +142,10 @@ export default {
   bottom: -13px;
 }
 
-.background{
+.background {
   max-width: 100%;
 }
- 
+
 .left {
   width: 50%;
 }
@@ -166,13 +173,11 @@ export default {
   flex-wrap: wrap;
   font-size: 13px;
   margin-left: 60px;
-  
 }
 
 @media screen and (max-width: 900px) {
   .offers {
     flex-direction: column;
-    
   }
 }
 
@@ -183,51 +188,54 @@ export default {
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
   border-radius: 40px;
-  margin-top:20px;
+  margin-top: 20px;
   margin: 20px auto;
-  
 }
-
 
 .boxoffer {
   position: relative;
   margin-top: 5em;
   display: flex;
-  
 }
 
 .rectangule {
   width: 750px;
   height: 200px;
-  border-top: 100px solid #00000010 ;
+  border-top: 100px solid #00000010;
   border-right: 100px solid transparent;
   margin-left: 3em;
-  
 }
 .rectangule p {
-  position: absolute;
-  top: 0em;
   font-size: 30px;
-  margin-left: 20px; 
-  
+  margin-left: 20px;
 }
 
-.triangle{
-   width: 350px;
-   height:50px;
-   border-bottom: 100px solid #FF6701;
-   border-left: 100px solid transparent;
-   margin-left:-5em;
-   margin-top: -3em;
-   
-}
-
-.triangle p {
-  position: absolute;
-  top: 0em;
-  font-size: 30px;
-  color:#F4F0EA;
+.triangle {
+  width: 350px;
+  height: 50px;
+  border-bottom: 100px solid #ff6701;
+  border-left: 100px solid transparent;
+  margin-left: -5em;
+  margin-top: -3em;
   cursor: pointer;
 }
 
+.triangle p {
+  font-size: 30px;
+  color: #f4f0ea;
+}
+.textoffer {
+  top: 0em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.textoffer2 {
+  top: 0em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
 </style>
