@@ -23,23 +23,28 @@
           src="../assets/img/home-background.png"
           alt=""
         />
+        
       </div>
     </div>
     <div class="offers">
-      <div class="offer1">SPRINKLERS</div>
-      <div class="offer2">ALARMS</div>
-      <div class="offer3">FIRE EXTINGUISHERS</div>
-      <div class="offer4">KITCHEN SUPPRESION</div>
-      <div class="offer5">BACKFLOW</div>
+      <div class="offerbox">SPRINKLERS</div>
+      <div class="offerbox">ALARMS</div>
+      <div class="offerbox">FIRE EXTINGUISHERS</div>
+      <div class="offerbox">KITCHEN SUPPRESION</div>
+      <div class="offerbox">BACKFLOW</div>
     </div>
     <div class="boxoffer">
       <div class="rectangule">
-        <p>WE OFFER PROFESIONAL FIRE PROTECTION SERVICES</p>
-      </div>
+        <p style="font-size:2vw;">WE OFFER PROFESIONAL FIRE PROTECTION SERVICES</p>
+        </div>
+        
+        <div class="triangle">
+        <p v-on:click="open" style="font-size:2vw;">REQUEST A QUOTE</p>
+        </div>
 
-      <div class="triangle">REQUEST A QUOTE</div>
+      </div>
     </div>
-  </div>
+  
 </template>
 
 <script>
@@ -84,15 +89,17 @@ export default {
   cursor: pointer;
   border-radius: 33px;
   padding: 0.3em 1em 0 1em;
+  margin-top: 1em;
 }
 
 .certificates {
   margin-top: 1em;
   display: flex;
   position: relative;
+  margin-left: 1.1em;
 }
 .image1 {
-  height: 2em;
+  height: 120px;
   max-width: 93px;
   margin-left: -25px;
 }
@@ -101,11 +108,11 @@ export default {
   width: 3em;
   position: absolute;
   left: -70px;
-  bottom: -30px;
+  bottom: -15px;
 }
 .image2 {
   margin-left: 125px;
-  height: 2em;
+  height: 140px;
   max-width: 93px;
 }
 .leaves2 {
@@ -113,11 +120,11 @@ export default {
   width: 3em;
   position: absolute;
   left: 150px;
-  bottom: -30px;
+  bottom: -13px;
 }
 .image3 {
   margin-left: 100px;
-  height: 2em;
+  height: 115px;
   max-width: 95px;
 }
 .leaves3 {
@@ -125,21 +132,20 @@ export default {
   width: 3em;
   position: absolute;
   left: 350px;
-  bottom: -30px;
+  bottom: -13px;
 }
-.background {
-  width: 500px;
-  height: 800px;
-  background-color: transparent;
-  object-fit: cover;
-  margin-left: 2em;
+
+.background{
+  max-width: 100%;
 }
+ 
 .left {
   width: 50%;
 }
 .right {
   width: 50%;
-  z-index: -2;
+  z-index: 2;
+  margin-top: 0;
 }
 
 @media (max-width: 1050px) {
@@ -147,70 +153,81 @@ export default {
     display: none;
   }
 }
+
 .offers {
-  margin-top: -3em;
+  margin-top: -2em;
   display: flex;
   position: relative;
-  margin-right: 80px;
+  margin-right: 60px;
   text-align: inherit;
   background: white;
   color: #000000;
   margin-bottom: 1em;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin-left: 60px;
+  
 }
-.offer1 {
-  width: 230px;
+
+@media screen and (max-width: 900px) {
+  .offers {
+    flex-direction: column;
+    
+  }
+}
+
+.offerbox {
+  width: 180px;
   height: 190px;
   margin-left: 40px;
   border: solid 1px #fea82f;
   box-shadow: 0px 15px 30px #b8b7b7;
   border-radius: 40px;
-}
-.offer2 {
-  width: 230px;
-  height: 190px;
-  margin-left: 60px;
-  border: solid 1px #fea82f;
-  box-shadow: 0px 15px 30px #b8b7b7;
-  border-radius: 40px;
-}
-.offer3 {
-  width: 230px;
-  height: 190px;
-  margin-left: 60px;
-  border: solid 1px #fea82f;
-  box-shadow: 0px 15px 30px #b8b7b7;
-  border-radius: 40px;
+  margin-top:20px;
+  margin: 20px auto;
+  
 }
 
-.offer4 {
-  width: 230px;
-  height: 190px;
-  margin-left: 60px;
-  border: solid 1px #fea82f;
-  box-shadow: 0px 15px 30px #b8b7b7;
-  border-radius: 40px;
-}
 
-.offer5 {
-  width: 230px;
-  height: 190px;
-  margin-left: 60px;
-  border: solid 1px #fea82f;
-  box-shadow: 0px 15px 30px #b8b7b7;
-  border-radius: 40px;
-}
 .boxoffer {
   position: relative;
   margin-top: 5em;
+  display: flex;
+  
 }
+
 .rectangule {
-  width: 500px;
+  width: 750px;
   height: 200px;
-  border-top: 100px solid red;
+  border-top: 100px solid #00000010 ;
   border-right: 100px solid transparent;
+  margin-left: 3em;
+  
 }
 .rectangule p {
   position: absolute;
-  top: 1em;
+  top: 0em;
+  font-size: 30px;
+  margin-left: 20px; 
+  
 }
+
+.triangle{
+   width: 350px;
+   height:50px;
+   border-bottom: 100px solid #FF6701;
+   border-left: 100px solid transparent;
+   margin-left:-5em;
+   margin-top: -3em;
+   
+}
+
+.triangle p {
+  position: absolute;
+  top: 0em;
+  font-size: 30px;
+  color:#F4F0EA;
+  cursor: pointer;
+}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="Navmenu">
-    <img class="mainlogo" src="../assets/certs/logo.png" alt="" />
+    <img class="mainlogo" src="../assets/logo/logo.png" alt="" />
     <div class="item">
       <router-link to="/Services"><strong>SERVICES</strong></router-link>
     </div>
@@ -35,7 +35,7 @@ export default {
   background: white;
   box-shadow: 5px 10px 20px #b8b7b7;
   display: flex;
-  justify-content: flex-end;
+  
   text-decoration: none;
   top: 1em;
   margin: 1em 175px;
