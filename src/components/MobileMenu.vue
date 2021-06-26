@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="menu">
-      <div>LOGO</div>
+      <div><img class="mainlogo" src="../assets/logo/logo.png" alt="" /></div>
       <div>
         <div
           class="hamburger"
@@ -106,8 +106,8 @@ export default {
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 2.5em;
-  width: 95%;
+  padding: 1em;
+  width: 99.5%;
   z-index: 1;
   color: white;
   background-color: orangered;
@@ -151,5 +151,10 @@ export default {
   position: fixed;
   width: 98%;
   z-index: 99;
+}
+.mainlogo {
+  margin-right: 300px;
+  height: 50px;
+  margin-top: 2px;
 }
 </style>

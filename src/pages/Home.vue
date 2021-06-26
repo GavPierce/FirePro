@@ -70,7 +70,7 @@ export default {
 .top {
   padding-left: 1em;
   text-align: justify;
-  font-size: 60px;
+  font-size: 45px;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -105,9 +105,9 @@ export default {
 }
 
 .certificates {
-  margin-top: 2em;
+  margin-top: 1.75em;
   display: flex;
-  margin-top: 2em;
+
   width: 100%;
 }
 .certs {
@@ -118,15 +118,15 @@ export default {
   height: 80px;
 }
 .image1 {
-  margin-left: 0.7em;
+  margin-left: 0.9em;
   margin-top: -0.1em;
 }
 .image2 {
-  margin-left: 0.5em;
+  margin-left: 0.7em;
   margin-top: -0.2em;
 }
 .image3 {
-  margin-left: 0.6em;
+  margin-left: 0.8em;
   margin-top: -0.1em;
   width: 80px;
   height: 80px;
