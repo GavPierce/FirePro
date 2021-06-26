@@ -9,12 +9,18 @@
         <div class="safe">SAFE</div>
         <div class="button" v-on:click="open">REQUEST A QUOTE</div>
         <div class="certificates">
-          <img class="image1" src="../assets/certs/calfire.png" alt="" />
-          <img class="image2" src="../assets/certs/experience.svg" alt="" />
-          <img class="image3" src="../assets/certs/amerex.png" alt="" />
-          <img class="leaves1" src="../assets/certs/leaves.svg" alt="" />
-          <img class="leaves2" src="../assets/certs/leaves.svg" alt="" />
-          <img class="leaves3" src="../assets/certs/leaves.svg" alt="" />
+          <div class="certs">
+            <img class="image1" src="../assets/certs/calfire.png" alt="" />
+            <img class="leaves" src="../assets/certs/leaves.svg" alt="" />
+          </div>
+          <div class="certs">
+            <img class="image2" src="../assets/certs/experience.svg" alt="" />
+            <img class="leaves" src="../assets/certs/leaves.svg" alt="" />
+          </div>
+          <div class="certs">
+            <img class="image3" src="../assets/certs/amerex.png" alt="" />
+            <img class="leaves" src="../assets/certs/leaves.svg" alt="" />
+          </div>
         </div>
       </div>
       <div class="right">
@@ -99,47 +105,38 @@ export default {
 }
 
 .certificates {
-  margin-top: 1em;
+  margin-top: 2em;
+  display: flex;
+  margin-top: 2em;
+  width: 100%;
+}
+.certs {
+  margin-left: 1.1em;
   display: flex;
   position: relative;
-  margin-left: 1.1em;
+  width: 70px;
+  height: 80px;
 }
-
 .image1 {
-  height: 120px;
-  max-width: 93px;
-  margin-left: -25px;
-}
-.leaves1 {
-  height: 3em;
-  width: 3em;
-  position: absolute;
-  left: -70px;
-  bottom: -15px;
+  margin-left: 0.7em;
+  margin-top: -0.1em;
 }
 .image2 {
-  margin-left: 125px;
-  height: 140px;
-  max-width: 93px;
-}
-.leaves2 {
-  height: 3em;
-  width: 3em;
-  position: absolute;
-  left: 150px;
-  bottom: -13px;
+  margin-left: 0.5em;
+  margin-top: -0.2em;
 }
 .image3 {
-  margin-left: 100px;
-  height: 115px;
-  max-width: 95px;
+  margin-left: 0.6em;
+  margin-top: -0.1em;
+  width: 80px;
+  height: 80px;
 }
-.leaves3 {
-  height: 3em;
-  width: 3em;
+
+.leaves {
   position: absolute;
-  left: 350px;
-  bottom: -13px;
+  width: 150px;
+  height: 100px;
+  margin-top: -0.3em;
 }
 
 .background {
