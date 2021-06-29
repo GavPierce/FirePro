@@ -202,6 +202,11 @@ export default {
   border-right: 100px solid transparent;
   margin-left: 3em;
 }
+@media screen and (max-width: 1285px) {
+  .rectangule {
+    margin-left: 0em;
+  }
+}
 .rectangule p {
   font-size: 30px;
   margin-left: 20px;

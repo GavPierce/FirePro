@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <div class="menu">
-      <div><img class="mainlogo" src="../assets/logo/logo.png" alt="" /></div>
+      <router-link to="/"
+        ><img class="mainlogo" src="../assets/logo/logo.png" alt=""
+      /></router-link>
+
       <div>
         <div
           class="hamburger"
@@ -156,5 +159,6 @@ export default {
   margin-right: 300px;
   height: 50px;
   margin-top: 2px;
+  cursor: pointer;
 }
 </style>

@@ -1,20 +1,24 @@
 <template>
   <div class="Navmenu">
-    <img class="mainlogo" src="../assets/logo/logo.png" alt="" />
-    <div class="item">
-      <router-link to="/Services"><strong>SERVICES</strong></router-link>
+    <router-link to="/"
+      ><img class="mainlogo" src="../assets/logo/logo.png" alt=""
+    /></router-link>
+    <div class="items">
+      <div class="item">
+        <router-link to="/Services"><strong>SERVICES</strong></router-link>
+      </div>
+      <div class="item">
+        <router-link to="/about-us">ABOUT US</router-link>
+      </div>
+      <div class="item"><router-link to="/Work">WORK</router-link></div>
+      <div class="item">
+        <router-link to="/Testimonial">TESTIMONIAL</router-link>
+      </div>
+      <div class="item">
+        <router-link to="/contact-us">CONTACT US</router-link>
+      </div>
+      <div class="phone" v-on:click="open">805-487-1477</div>
     </div>
-    <div class="item">
-      <router-link to="/about-us">ABOUT US</router-link>
-    </div>
-    <div class="item"><router-link to="/Work">WORK</router-link></div>
-    <div class="item">
-      <router-link to="/Testimonial">TESTIMONIAL</router-link>
-    </div>
-    <div class="item">
-      <router-link to="/contact-us">CONTACT US</router-link>
-    </div>
-    <div class="phone" v-on:click="open">805-487-1477</div>
   </div>
 </template>
 
@@ -30,8 +34,8 @@ export default {
 </script>
 <style>
 .Navmenu {
-  justify-content: flex-end;
-  border-radius: 40px;
+  justify-content: space-between;
+  border-radius: 35px;
   background: white;
   box-shadow: 5px 10px 20px #b8b7b7;
   display: flex;
@@ -40,9 +44,10 @@ export default {
   margin: 1em 175px;
   position: sticky;
   z-index: 99;
-  width: 80%;
+  width: 90%;
   align-items: center;
   font-size: 15px;
+  margin-left: 2.5em;
 }
 @media screen and (max-width: 1314px) {
   .Navmenu {
@@ -67,10 +72,11 @@ export default {
   background-color: orangered;
   color: white;
   font-size: 1.3em;
-  border-radius: 25px;
-  padding: 0.85em 1.5em;
+  border-radius: 30px;
+  padding: 0.5em 1em;
   margin-left: 2em;
   cursor: pointer;
+  margin-right: 0em;
 }
 a {
   text-decoration: none;
@@ -120,8 +126,13 @@ input {
 }
 
 .mainlogo {
-  margin-right: 300px;
-  height: 60px;
-  margin-top: 3px;
+  height: 40px;
+  margin: 1px 4px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.items {
+  display: flex;
+  align-items: center;
 }
 </style>

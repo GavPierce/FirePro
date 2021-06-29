@@ -7,6 +7,7 @@ import ContactUs from "./pages/ContactUs.vue";
 import Services from "./pages/Services.vue";
 import Testimonial from "./pages/Testimonial.vue";
 import Work from "./pages/Work.vue";
+
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 const routes = [
@@ -16,14 +17,14 @@ const routes = [
   { path: "/Services", component: Services },
   { path: "/Testimonial", component: Testimonial },
   { path: "/Work", component: Work },
-  { path: "/work", component: Work },
+  { path: "/work", component: Work }
 ];
 
 const router = new VueRouter({
   mode: "history",
-  routes, // short for `routes: routes`
+  routes // short for `routes: routes`
 });
 new Vue({
   router,
-  render: (h) => h(App),
+  render: h => h(App)
 }).$mount("#app");
