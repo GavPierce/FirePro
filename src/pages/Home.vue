@@ -53,11 +53,137 @@
         </div>
       </div>
     </div>
+    <div class="AU">
+      <div class="ab1">ABOUT</div>
+      <div class="ab2">US</div>
+    </div>
+    <div class="AU-TEXT">
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum
+        dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      </p>
+      <p class="word">FIREPRO.</p>
+    </div>
+    <div class="OW">
+      <div class="ow1">WORK</div>
+      <div class="ow2">OUR</div>
+    </div>
+    <div class="below-ow">
+      <div class="box1">
+        <div class="experience">
+          <p>
+            20
+          </p>
+
+          <p class="yo">
+            YEARS OF <br />
+            EXPERIENCE
+          </p>
+        </div>
+      </div>
+
+      <div class="box2" v-on:click="open">
+        <div class="number">
+          <p>805-487-1477</p>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <splide
+        :options="{
+          rewind: true,
+          gap: '1rem'
+        }"
+      >
+        <splide-slide>
+          <img src="../assets/img/slide1.png" alt="slide.alt" />
+        </splide-slide>
+        <splide-slide>
+          <img src="../assets/img/slide2.png" alt="slide.alt" />
+        </splide-slide>
+        <splide-slide>
+          <img src="../assets/img/slide3.png" alt="slide.alt" />
+        </splide-slide>
+      </splide>
+    </div>
+    <div class="Testimonial">
+      <p>TESTIMONIAL</p>
+    </div>
+
+    <div class="Rating">
+      <!-- Font Awesome Icon Library -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <div class="testbox">
+        <p>Hayling Pierce</p>
+        <p class="city">California, San Diego</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p class="opinion">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+
+      <div class="testbox">
+        <p>Gavin Pierce</p>
+        <p class="city">California, Ventura</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p class="opinion">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+
+      <div class="testbox">
+        <p>Mauriel Sequeira</p>
+        <p class="city">California, Sacramento</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p class="opinion">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </div>
+    </div>
+    <div class="CU">
+      <div class="cu1">CONTACT</div>
+      <div class="cu2">US</div>
+    </div>
   </div>
 </template>
 
 <script>
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+
 export default {
+  components: {
+    Splide,
+    SplideSlide
+  },
   methods: {
     open() {
       console.log("from home button");
@@ -93,7 +219,7 @@ export default {
 .button {
   background-color: orangered;
   color: #f4f0ea;
-  font-size: 30px;
+  font-size: 25px;
   width: 9em;
   height: 2em;
   z-index: 100;
@@ -114,28 +240,33 @@ export default {
   margin-left: 1.1em;
   display: flex;
   position: relative;
-  width: 70px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
+}
+@media screen and (max-width: 1300px) {
+  .certificates {
+    flex-wrap: wrap;
+  }
 }
 .image1 {
   margin-left: 0.9em;
-  margin-top: -0.1em;
+  margin-top: -0em;
 }
 .image2 {
-  margin-left: 0.7em;
-  margin-top: -0.2em;
+  margin-left: 0.6em;
+  margin-top: -0em;
 }
 .image3 {
-  margin-left: 0.8em;
-  margin-top: -0.1em;
-  width: 80px;
-  height: 80px;
+  margin-left: 0.7em;
+  margin-top: -0em;
+  width: 110px;
+  height: 120px;
 }
 
 .leaves {
   position: absolute;
-  width: 150px;
-  height: 100px;
+  width: 170px;
+  height: 170px;
   margin-top: -0.3em;
 }
 
@@ -239,5 +370,181 @@ export default {
   display: flex;
   align-items: center;
   position: absolute;
+}
+.AU {
+  border-top-style: solid;
+  color: #fea82f;
+  width: 8em;
+  margin-top: -7em;
+  display: flex;
+  margin-left: 4em;
+}
+.ab1 {
+  font-size: 30px;
+  color: #000000;
+}
+.ab2 {
+  font-size: 20px;
+  color: #000000;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.AU-TEXT {
+  display: flex;
+}
+.text {
+  text-align: start;
+  width: 40em;
+  margin-left: 4em;
+  margin-top: 4em;
+}
+.word {
+  color: #fea82f;
+  font-size: 90px;
+  margin-left: -1.5em;
+  width: 649px;
+  height: 224px;
+}
+.OW {
+  border-top-style: solid;
+  color: #fea82f;
+  width: 7em;
+  margin-top: 2em;
+  display: flex;
+  margin-left: 72em;
+  position: relative;
+}
+.ow1 {
+  font-size: 30px;
+  color: #000000;
+}
+.ow2 {
+  font-size: 20px;
+  color: #000000;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.below-ow {
+  position: relative;
+  margin-top: 2em;
+  display: flex;
+}
+.box1 {
+  width: 90px;
+  height: 1px;
+  border-top: 100px solid #f27405;
+  border-right: 100px solid transparent;
+  margin-left: 55em;
+}
+.experience {
+  top: 0em;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.experience p {
+  font-size: 25px;
+  margin-left: 10px;
+}
+p.yo {
+  font-size: 10px;
+}
+.slider img {
+  height: 20em;
+  width: 50em;
+  object-fit: cover;
+}
+
+.box2 {
+  width: 110px;
+  height: 1px;
+  border-bottom: 100px solid #ff6701;
+  border-left: 100px solid transparent;
+  margin-left: -5em;
+  cursor: pointer;
+}
+.splide__arrow svg {
+  width: 25em !important;
+  height: 3em !important;
+  fill: #f28729 !important;
+  transition: fill 0.2s linear !important;
+}
+.splide__pagination__page.is-active {
+  background: #f28729 !important;
+}
+.number {
+  align-items: center;
+  position: absolute;
+  color: #ffffff;
+  margin-left: -10px;
+  font-size: 15px;
+  margin-top: 1.5em;
+}
+.Testimonial {
+  border-top-style: solid;
+  color: #fea82f;
+  width: 11.5em;
+  margin-top: 5em;
+  margin-left: 3em;
+}
+.Testimonial p {
+  font-size: 30px;
+  color: #000000;
+  margin-top: 0em;
+}
+.Rating {
+  display: flex;
+}
+.testbox {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #ffffff;
+  box-shadow: 0px 15px 30px #b8b7b7;
+  border-radius: 40px;
+  margin-top: 2em;
+  margin: 50px auto;
+}
+.testbox p {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin-left: 10px;
+}
+p.city {
+  font-size: 10px;
+  color: #000000;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: -2em;
+}
+.checked {
+  color: #fea82f;
+}
+p.opinion {
+  font-size: 15px;
+  text-align: center;
+  color: #000000;
+}
+.CU {
+  border-top-style: solid;
+  color: #fea82f;
+  width: 10.5em;
+  margin-top: 4em;
+  display: flex;
+  margin-left: 68em;
+  position: relative;
+}
+.cu1 {
+  font-size: 30px;
+  color: #000000;
+}
+.cu2 {
+  font-size: 20px;
+  color: #000000;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 </style>

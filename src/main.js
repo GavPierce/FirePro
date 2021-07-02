@@ -7,7 +7,10 @@ import ContactUs from "./pages/ContactUs.vue";
 import Services from "./pages/Services.vue";
 import Testimonial from "./pages/Testimonial.vue";
 import Work from "./pages/Work.vue";
+import VueSplide from "@splidejs/vue-splide";
+import "@splidejs/splide/dist/css/themes/splide-sea-green.min.css";
 
+Vue.use(VueSplide);
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 const routes = [

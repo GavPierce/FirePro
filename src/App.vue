@@ -35,6 +35,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
+
 #app {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
