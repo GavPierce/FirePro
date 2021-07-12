@@ -72,13 +72,10 @@
       </p>
       <p class="word">FIREPRO.</p>
     </div>
-    <div class="subtitle">
-          <div class="OW">
+    <div class="OW">
       <div class="ow1">WORK</div>
       <div class="ow2">OUR</div>
     </div>
-    </div>
-
     <div class="below-ow">
       <div class="box1">
         <div class="experience">
@@ -172,13 +169,10 @@
         </p>
       </div>
     </div>
-    <div class="subtitle">
-      <div class="CU">
-        <div class="cu1">CONTACT</div>
-        <div class="cu2">US</div>
+    <div class="CU">
+      <div class="cu1">CONTACT</div>
+      <div class="cu2">US</div>
     </div>
-    </div>
-
   </div>
 </template>
 
@@ -200,11 +194,12 @@ export default {
 </script>
 <style>
 .top {
-  padding-left: 3em;
+  padding-left: 1em;
   text-align: justify;
   font-size: 45px;
   position: relative;
   display: flex;
+  overflow: hidden;
   top: -2em;
 }
 
@@ -242,10 +237,9 @@ export default {
   width: 100%;
 }
 .certs {
-  margin-left: 2em;
+  margin-left: 1.1em;
   display: flex;
   position: relative;
-  margin-top: 1em;
   width: 120px;
   height: 120px;
 }
@@ -398,38 +392,26 @@ export default {
 .AU-TEXT {
   display: flex;
 }
-
 .text {
   text-align: start;
+  width: 40em;
   margin-left: 4em;
-  margin-top: 1em;
-  margin-right: 2em;
+  margin-top: 4em;
 }
 .word {
   color: #fea82f;
   font-size: 90px;
-  margin: 0;
-  margin-right: 3em;
-}
-@media (max-width: 1240px) {
-  .AU-TEXT {
-    flex-direction: column-reverse;
-  }
-  .word {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 700px) {
-  .word {
-    font-size: 40px;
-  }
+  margin-left: -1.5em;
+  width: 649px;
+  height: 224px;
 }
 .OW {
   border-top-style: solid;
   color: #fea82f;
   width: 7em;
-  margin-right: 3em;
+  margin-top: 2em;
   display: flex;
+  margin-left: 72em;
   position: relative;
 }
 .ow1 {
@@ -445,16 +427,14 @@ export default {
 .below-ow {
   position: relative;
   margin-top: 2em;
-  margin-right: 3em;
   display: flex;
-  justify-content: flex-end;
 }
 .box1 {
   width: 90px;
   height: 1px;
-  margin-right: 1em;
   border-top: 100px solid #f27405;
   border-right: 100px solid transparent;
+  margin-left: 55em;
 }
 .experience {
   top: 0em;
@@ -471,8 +451,6 @@ export default {
 }
 p.yo {
   font-size: 10px;
-  margin-right: 3em;
-  font-weight: bold;
 }
 .slider img {
   height: 20em;
@@ -487,7 +465,6 @@ p.yo {
   border-left: 100px solid transparent;
   margin-left: -5em;
   cursor: pointer;
-  font-weight: bold;
 }
 .splide__arrow svg {
   width: 25em !important;
@@ -551,18 +528,14 @@ p.opinion {
   text-align: center;
   color: #000000;
 }
-.subtitle {
-  display: flex;
-  justify-content: flex-end;
-}
 .CU {
   border-top-style: solid;
   color: #fea82f;
   width: 10.5em;
-  margin: 4em 3em 0 0;
+  margin-top: 4em;
   display: flex;
+  margin-left: 68em;
   position: relative;
-  justify-self: flex-end;
 }
 .cu1 {
   font-size: 30px;

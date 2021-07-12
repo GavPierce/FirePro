@@ -134,7 +134,7 @@ export default {
   border-radius: 15px;
   padding: 10px;
   cursor: pointer;
-  margin-left: 30%;
+  margin-left: 40%;
   margin-right: 30%;
 }
 .list.active {
