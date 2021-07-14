@@ -27,19 +27,70 @@
           aliquam erat volutpat.
         </div>
       </div>
+
       <div class="auright">
         <img class="tools" src="../assets/img/circle.svg" alt="" />
       </div>
     </div>
     <div class="description">
-      <div>EXPERT MEMBERS</div>
-      <div></div>
-      <div>SATISFIED CLIENT</div>
-      <div></div>
-      <div>BEST QUALIFIED TEAM</div>
-      <div></div>
-      <div>GREAT PRODUCTS</div>
-      <div></div>
+      <div>
+        <p class="benefits">EXPERT MEMBERS</p>
+        <p class="descritext">
+          Lorem ipsum dolor sit amet,<br />
+          consectetuer adipiscing elit,<br />
+          sed diam nonummy nibh euismod
+        </p>
+      </div>
+      <div>
+        <p class="benefits">SATISFIED CLIENT</p>
+        <p class="descritext">
+          Lorem ipsum dolor sit amet,<br />
+          consectetuer adipiscing elit,<br />
+          sed diam nonummy nibh euismod
+        </p>
+      </div>
+
+      <div>
+        <p class="benefits">BEST QUALIFIED TEAM</p>
+        <p class="descritext">
+          Lorem ipsum dolor sit amet,<br />
+          consectetuer adipiscing elit,<br />
+          sed diam nonummy nibh euismod
+        </p>
+      </div>
+      <div>
+        <p class="benefits">GREAT PRODUCTS</p>
+        <p class="descritext">
+          Lorem ipsum dolor sit amet,<br />
+          consectetuer adipiscing elit,<br />
+          sed diam nonummy nibh euismod
+        </p>
+      </div>
+    </div>
+
+    <div class="team">OUR TEAM</div>
+
+    <div class="members">
+      <div>
+        <img class="staff" src="../assets/img/member1.png" alt="" />
+        <p class="staff-name">JOHN SMITH</p>
+        <p class="staff-possition">DESIGN EXPERT</p>
+      </div>
+      <div>
+        <img class="staff" src="../assets/img/member2.png" alt="" />
+        <p class="staff-name">AMBER ARES</p>
+        <p class="staff-possition">CEO</p>
+      </div>
+      <div>
+        <img class="staff" src="../assets/img/member3.png" alt="" />
+        <p class="staff-name">Charles JANE</p>
+        <p class="staff-possition">KITCHEN SUPPRESION</p>
+      </div>
+      <div>
+        <img class="staff" src="../assets/img/member4.png" alt="" />
+        <p class="staff-name">KING SAM</p>
+        <p class="staff-possition">FIRE EXTINGUISHERS EXPERT</p>
+      </div>
     </div>
   </div>
 </template>
@@ -105,7 +156,7 @@ export default {};
 }
 
 @media (max-width: 1050px) {
-  .right {
+  .auright {
     display: none;
   }
 }
@@ -119,11 +170,47 @@ export default {};
   flex-wrap: wrap;
   margin-left: 3em;
   color: #000000;
+  margin-right: 3em;
+}
+p.descritext {
+  font-size: 10px;
+  color: #000000;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: -2em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .description {
     flex-direction: column;
   }
+}
+.team {
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  margin-top: 7em;
+}
+.members {
+  display: flex;
+}
+.staff {
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 3em;
+  margin-top: 7em;
+  border-radius: 50%;
+}
+p.staff-name {
+  font-size: 20px;
+  margin-left: 1.5em;
+}
+p.staff-possition {
+  margin-left: 1.5em;
+  font-size: 15px;
+  color: #ff6701;
+  margin-top: -2em;
 }
 </style>
