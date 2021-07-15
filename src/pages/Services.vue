@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div class="ourServices">
       <div class="Services">SERVICES</div>
       <div class="Our">OUR</div>
@@ -102,7 +102,6 @@ export default {
   padding-top: 0em;
   display: flex;
   margin-left: 4em;
-  margin-top: 7em;
 }
 .Services {
   font-size: 50px;
@@ -114,6 +113,11 @@ export default {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
+.wrapper {
+  position: relative;
+  top: 5em;
+}
+
 .OS-Intro {
   margin-left: 0.5em;
   font-size: 30px;
