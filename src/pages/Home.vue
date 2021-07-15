@@ -245,7 +245,6 @@ export default {
   font-size: 45px;
   position: relative;
   display: flex;
-  overflow: hidden;
   top: -2em;
 }
 
