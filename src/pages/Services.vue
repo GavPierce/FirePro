@@ -41,24 +41,6 @@
       <div>
         <img class="service-Icon" src="../assets/img/service5.svg" alt="" />
       </div>
-      <div class="slider">
-        <splide
-          :options="{
-            rewind: true,
-            gap: '1rem'
-          }"
-        >
-          <splide-slide>
-            <img src="../assets/img/slide1.png" alt="slide.alt" />
-          </splide-slide>
-          <splide-slide>
-            <img src="../assets/img/slide2.png" alt="slide.alt" />
-          </splide-slide>
-          <splide-slide>
-            <img src="../assets/img/slide3.png" alt="slide.alt" />
-          </splide-slide>
-        </splide>
-      </div>
     </div>
 
     <div class="boxoffer">
@@ -157,10 +139,10 @@ p.alarms {
 }
 .Services-Pictures {
   display: flex;
-  width: 20px;
-  height: 20px;
+  flex-wrap: wrap;
+
   justify-content: space-between;
-  margin-left: 5em;
+  margin-left: 3em;
   margin-right: 3em;
   margin-top: 4em;
 }
@@ -171,7 +153,6 @@ p.alarms {
   margin-left: 4em;
   margin-right: 2em;
   margin-top: 5em;
-  padding-bottom: 12em;
 }
 .boxoffer {
   position: relative;
@@ -223,5 +204,10 @@ p.alarms {
   display: flex;
   align-items: center;
   position: absolute;
+}
+@media (max-width: 900px) {
+  .Intro-Text {
+    margin-right: 0em;
+  }
 }
 </style>
