@@ -32,11 +32,56 @@
       </div>
     </div>
     <div class="offers">
-      <div class="offerbox">SPRINKLERS</div>
-      <div class="offerbox">ALARMS</div>
-      <div class="offerbox">FIRE EXTINGUISHERS</div>
-      <div class="offerbox">KITCHEN SUPPRESION</div>
-      <div class="offerbox">BACKFLOW</div>
+      <div class="offerbox">  
+        <div class="offerbox-title">SPRINKLERS</div> 
+        <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title">ALARMS</div> 
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title">FIRE EXTINGUISHERS</div>
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div> 
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title">KITCHEN SUPPRESION</div> 
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title"> BACKFLOW</div>
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
     </div>
     <div class="boxoffer">
       <div class="rectangule">
@@ -70,7 +115,7 @@
         dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
         euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
       </p>
-      <p class="word">FIREPRO.</p>
+      <p class="word">SERVICE PRO.</p>
     </div>
     <div class="subtitle">
           <div class="OW">
@@ -198,6 +243,7 @@ export default {
   }
 };
 </script>
+
 <style>
 .top {
   padding-left: 3em;
@@ -238,15 +284,14 @@ export default {
 .certificates {
   margin-top: 1.75em;
   display: flex;
-
+justify-content: center;
   width: 100%;
 }
 .certs {
-  margin-left: 2em;
   display: flex;
   position: relative;
   margin-top: 1em;
-  width: 120px;
+  width: 190px;
   height: 120px;
 }
 @media screen and (max-width: 1300px) {
@@ -290,8 +335,20 @@ export default {
 }
 
 @media (max-width: 1050px) {
+  .top {
+    padding-left: 0;
+  }
   .right {
     display: none;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: .5em;
+  }
+  .button {
+    margin: 2em auto;
   }
 }
 
@@ -309,12 +366,6 @@ export default {
   margin-left: 60px;
 }
 
-@media screen and (max-width: 900px) {
-  .offers {
-    flex-direction: column;
-  }
-}
-
 .offerbox {
   width: 180px;
   height: 190px;
@@ -324,8 +375,18 @@ export default {
   border-radius: 40px;
   margin-top: 20px;
   margin: 20px auto;
+  cursor: pointer;
 }
-
+.offerbox-title {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.offerbox-content {
+  margin: 2em 0;
+}
+.offerbox-link {
+  color: #FF6701;
+}
 .boxoffer {
   position: relative;
   margin-top: 5em;
@@ -411,14 +472,7 @@ export default {
   margin: 0;
   margin-right: 3em;
 }
-@media (max-width: 1240px) {
-  .AU-TEXT {
-    flex-direction: column-reverse;
-  }
-  .word {
-    margin: 0 auto;
-  }
-}
+
 @media (max-width: 700px) {
   .word {
     font-size: 40px;
@@ -428,7 +482,7 @@ export default {
   border-top-style: solid;
   color: #fea82f;
   width: 7em;
-  margin-right: 3em;
+  margin-right: 5em;
   display: flex;
   position: relative;
 }
@@ -442,12 +496,28 @@ export default {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
+
 .below-ow {
   position: relative;
   margin-top: 2em;
-  margin-right: 3em;
+  margin-right: 5em;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1240px) {
+  .AU-TEXT {
+    flex-direction: column-reverse;
+  }
+  .word {
+    margin: 0 auto;
+  }
+  .OW {
+    margin-right: 3em;
+  }
+  .below-ow {
+   margin-right: 0em;
+
+  }
 }
 .box1 {
   width: 90px;
@@ -490,10 +560,15 @@ p.yo {
   font-weight: bold;
 }
 .splide__arrow svg {
-  width: 25em !important;
   height: 3em !important;
   fill: #f28729 !important;
   transition: fill 0.2s linear !important;
+}
+.splide__arrow--next {
+  margin-right: 1em;
+}
+.splide__arrow--prev {
+  margin-left: 1em;
 }
 .splide__pagination__page.is-active {
   background: #f28729 !important;
@@ -520,6 +595,7 @@ p.yo {
 }
 .Rating {
   display: flex;
+  flex-wrap: wrap;
 }
 .testbox {
   width: 300px;

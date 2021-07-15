@@ -17,7 +17,7 @@
       <div class="label">Email:</div>
       <input type="text" /><br /><br />
       <div class="label">Message:</div>
-      <input class="Message" type="text" /><br /><br />
+      <textarea class="Message" /><br /><br />
       <div class="Buttom">SUBMIT</div>
     </div>
   </div>
@@ -37,16 +37,62 @@ export default {
 <style>
 .box {
   background-color: #ff6701;
-  height: 26em;
-  width: 27em;
+  height: 28em;
+  width: 23em;
   position: fixed;
-  left: calc(50% - 12.5em);
-  top: calc(50% - 10em);
+  left: calc(50% - 11.5em);
+  top: calc(50% - 15em);
   line-height: 0;
   margin: 0;
   padding: 2 em;
   border-radius: 2em;
   color: #ffffff;
   z-index: 10;
+}
+h6 {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1em;
+  
+  margin: 0 0 1em 0;
+}
+.h4 {
+  
+  font-weight: bold;
+}
+.close {
+  left: 5em;
+  top: 1em;
+}
+.label {
+  text-align: left;
+  margin-left: 9em;
+  font-size: 0.6em;
+  color: #ffffff;
+}
+.Buttom {
+  color: #ffffff;
+  font-size: 0.8em;
+  cursor: pointer;
+  background-color: black;
+  padding: 1.5em;
+  width: min-content;
+  border-radius: 1.5em;
+  margin: 0 auto;
+}
+input {
+  width: 60%;
+  padding: 3px 2px;
+  margin: 9px 0;
+  border-radius: 20ex;
+  border: 0;
+}
+.Message {
+  margin-top: 1em;
+  width: 60%;
+  height: 70px;
+  padding: 5px 2px;
+  border-radius: 20px;
+  resize: none;
 }
 </style>
