@@ -1,9 +1,14 @@
 <template>
   <div class="container">
     <div class="menu">
+    <div class="brand">
       <router-link to="/"
-        ><img class="mainlogo" src="../assets/logo/logo.png" alt=""
-      /></router-link>
+      >
+        <img class="mainlogo" src="../assets/logo/Logo-no-background.png" alt=""/>
+
+    </router-link>
+          
+    </div>
 
       <div>
         <div
@@ -35,9 +40,9 @@
       <div class="item" v-on:click="isOpen = false">
         <router-link to="/contact-us">CONTACT US</router-link>
       </div>
-      <div class="item number" v-on:click="open, (isOpen = false)">
-        805-487-1477
-      </div>
+      <div class="item" v-on:click="open">
+       <div class="phone-number">805-487-1477</div>
+      </div>      
     </div>
   </div>
 </template>
@@ -53,6 +58,7 @@ export default {
 
   methods: {
     open() {
+      this.isOpen = false
       this.$emit("showQuote", true);
     }
   }
@@ -95,13 +101,15 @@ export default {
   -o-transform: translateY(-13px) rotate(90deg);
   transform: translateY(-13px) rotate(45deg);
 }
-
+.hamburger {
+  margin-top: 1em;
+}
 .hamburger .line {
   width: 50px;
   height: 5px;
   background-color: #ecf0f1;
   display: block;
-  margin: 8px auto;
+  margin: 8px 2em;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -109,8 +117,6 @@ export default {
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-  width: 99.5%;
   z-index: 1;
   color: white;
   background-color: orangered;
@@ -127,15 +133,14 @@ export default {
 .list .item {
   background-color: white;
 }
-.number {
+.phone-number {
   background-color: orangered !important;
   color: white;
   font-size: 1em;
   border-radius: 15px;
   padding: 10px;
   cursor: pointer;
-  margin-left: 40%;
-  margin-right: 30%;
+  margin: 0 auto;
 }
 .list.active {
   top: 0;
@@ -152,13 +157,13 @@ export default {
 }
 .container {
   position: fixed;
-  width: 98%;
+  width: 100%;
   z-index: 99;
 }
 .mainlogo {
-  margin-right: 300px;
-  height: 50px;
+  height: 55px;
   margin-top: 2px;
   cursor: pointer;
 }
+
 </style>

@@ -32,11 +32,56 @@
       </div>
     </div>
     <div class="offers">
-      <div class="offerbox">SPRINKLERS</div>
-      <div class="offerbox">ALARMS</div>
-      <div class="offerbox">FIRE EXTINGUISHERS</div>
-      <div class="offerbox">KITCHEN SUPPRESION</div>
-      <div class="offerbox">BACKFLOW</div>
+      <div class="offerbox">  
+        <div class="offerbox-title">SPRINKLERS</div> 
+        <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title">ALARMS</div> 
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title">FIRE EXTINGUISHERS</div>
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div> 
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title">KITCHEN SUPPRESION</div> 
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
+      <div class="offerbox"> 
+        <div class="offerbox-title"> BACKFLOW</div>
+          <div class="offerbox-content">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod
+        </div>
+        <div class="offerbox-link">
+          More >
+        </div>
+      </div>
     </div>
     <div class="boxoffer">
       <div class="rectangule">
@@ -70,12 +115,15 @@
         dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
         euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
       </p>
-      <p class="word">FIREPRO.</p>
+      <p class="word">SERVICE PRO.</p>
     </div>
-    <div class="OW">
+    <div class="subtitle">
+          <div class="OW">
       <div class="ow1">WORK</div>
       <div class="ow2">OUR</div>
     </div>
+    </div>
+
     <div class="below-ow">
       <div class="box1">
         <div class="experience">
@@ -169,10 +217,13 @@
         </p>
       </div>
     </div>
-    <div class="CU">
-      <div class="cu1">CONTACT</div>
-      <div class="cu2">US</div>
+    <div class="subtitle">
+      <div class="CU">
+        <div class="cu1">CONTACT</div>
+        <div class="cu2">US</div>
     </div>
+    </div>
+
   </div>
 </template>
 
@@ -192,14 +243,14 @@ export default {
   }
 };
 </script>
+
 <style>
 .top {
-  padding-left: 1em;
+  padding-left: 3em;
   text-align: justify;
   font-size: 45px;
   position: relative;
   display: flex;
-  overflow: hidden;
   top: -2em;
 }
 
@@ -233,14 +284,14 @@ export default {
 .certificates {
   margin-top: 1.75em;
   display: flex;
-
+justify-content: center;
   width: 100%;
 }
 .certs {
-  margin-left: 1.1em;
   display: flex;
   position: relative;
-  width: 120px;
+  margin-top: 1em;
+  width: 190px;
   height: 120px;
 }
 @media screen and (max-width: 1300px) {
@@ -284,8 +335,20 @@ export default {
 }
 
 @media (max-width: 1050px) {
+  .top {
+    padding-left: 0;
+  }
   .right {
     display: none;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: .5em;
+  }
+  .button {
+    margin: 2em auto;
   }
 }
 
@@ -303,12 +366,6 @@ export default {
   margin-left: 60px;
 }
 
-@media screen and (max-width: 900px) {
-  .offers {
-    flex-direction: column;
-  }
-}
-
 .offerbox {
   width: 180px;
   height: 190px;
@@ -318,8 +375,18 @@ export default {
   border-radius: 40px;
   margin-top: 20px;
   margin: 20px auto;
+  cursor: pointer;
 }
-
+.offerbox-title {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.offerbox-content {
+  margin: 2em 0;
+}
+.offerbox-link {
+  color: #FF6701;
+}
 .boxoffer {
   position: relative;
   margin-top: 5em;
@@ -392,26 +459,31 @@ export default {
 .AU-TEXT {
   display: flex;
 }
+
 .text {
   text-align: start;
-  width: 40em;
   margin-left: 4em;
-  margin-top: 4em;
+  margin-top: 1em;
+  margin-right: 2em;
 }
 .word {
   color: #fea82f;
   font-size: 90px;
-  margin-left: -1.5em;
-  width: 649px;
-  height: 224px;
+  margin: 0;
+  margin-right: 3em;
+}
+
+@media (max-width: 700px) {
+  .word {
+    font-size: 40px;
+  }
 }
 .OW {
   border-top-style: solid;
   color: #fea82f;
   width: 7em;
-  margin-top: 2em;
+  margin-right: 5em;
   display: flex;
-  margin-left: 72em;
   position: relative;
 }
 .ow1 {
@@ -424,17 +496,35 @@ export default {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
+
 .below-ow {
   position: relative;
   margin-top: 2em;
+  margin-right: 5em;
   display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 1240px) {
+  .AU-TEXT {
+    flex-direction: column-reverse;
+  }
+  .word {
+    margin: 0 auto;
+  }
+  .OW {
+    margin-right: 3em;
+  }
+  .below-ow {
+   margin-right: 0em;
+
+  }
 }
 .box1 {
   width: 90px;
   height: 1px;
+  margin-right: 1em;
   border-top: 100px solid #f27405;
   border-right: 100px solid transparent;
-  margin-left: 55em;
 }
 .experience {
   top: 0em;
@@ -451,6 +541,8 @@ export default {
 }
 p.yo {
   font-size: 10px;
+  margin-right: 3em;
+  font-weight: bold;
 }
 .slider img {
   height: 20em;
@@ -465,12 +557,18 @@ p.yo {
   border-left: 100px solid transparent;
   margin-left: -5em;
   cursor: pointer;
+  font-weight: bold;
 }
 .splide__arrow svg {
-  width: 25em !important;
   height: 3em !important;
   fill: #f28729 !important;
   transition: fill 0.2s linear !important;
+}
+.splide__arrow--next {
+  margin-right: 1em;
+}
+.splide__arrow--prev {
+  margin-left: 1em;
 }
 .splide__pagination__page.is-active {
   background: #f28729 !important;
@@ -497,6 +595,7 @@ p.yo {
 }
 .Rating {
   display: flex;
+  flex-wrap: wrap;
 }
 .testbox {
   width: 300px;
@@ -528,14 +627,18 @@ p.opinion {
   text-align: center;
   color: #000000;
 }
+.subtitle {
+  display: flex;
+  justify-content: flex-end;
+}
 .CU {
   border-top-style: solid;
   color: #fea82f;
   width: 10.5em;
-  margin-top: 4em;
+  margin: 4em 3em 0 0;
   display: flex;
-  margin-left: 68em;
   position: relative;
+  justify-self: flex-end;
 }
 .cu1 {
   font-size: 30px;

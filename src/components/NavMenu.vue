@@ -1,8 +1,14 @@
 <template>
   <div class="Navmenu">
-    <router-link to="/"
-      ><img class="mainlogo" src="../assets/logo/logo.png" alt=""
-    /></router-link>
+    <div class="brand">
+      <router-link to="/"
+      >
+        <img class="mainlogo" src="../assets/logo/Logo-no-background.png" alt=""/>
+
+    </router-link>
+            <div class="company-name">Service Pro</div>
+    </div>
+    
     <div class="items">
       <div class="item">
         <router-link to="/Services"><strong>SERVICES</strong></router-link>
@@ -69,14 +75,14 @@ export default {
   font-weight: 600;
 }
 .phone {
-  background-color: orangered;
+  background-color: #FF6701;
   color: white;
   font-size: 1.3em;
   border-radius: 30px;
   padding: 0.5em 1em;
   margin-left: 2em;
   cursor: pointer;
-  margin-right: 0em;
+  margin-right: .5em;
 }
 a {
   text-decoration: none;
@@ -99,37 +105,22 @@ a:hover {
   cursor: pointer;
 }
 
-input {
-  width: 60%;
-  padding: 3px 2px;
-  margin: 9px 0;
-  border-radius: 25ex;
-  border: 0;
+.brand {
+  display: flex;
 }
-.Message {
-  width: 60%;
-  height: 70px;
-  padding: 3px 2px;
-  border-radius: 30px;
-  resize: none;
-}
-.label {
-  text-align: left;
-  margin-left: 9em;
-  font-size: 0.6em;
-  color: #ffffff;
-}
-.Buttom {
-  color: #ffffff;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-
 .mainlogo {
-  height: 40px;
+  height: 70px;
   margin: 1px 4px;
-  opacity: 0.75;
   cursor: pointer;
+  margin-left: 3em;
+}
+.company-name {
+  color:#b91e24;
+  font-family: 'Sigmar One', cursive;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  font-size: 2em;
 }
 .items {
   display: flex;
