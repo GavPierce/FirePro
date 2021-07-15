@@ -92,6 +92,7 @@
         <p class="staff-possition">FIRE EXTINGUISHERS EXPERT</p>
       </div>
     </div>
+    <div class="line-diveder"></div>
   </div>
 </template>
 
@@ -212,5 +213,13 @@ p.staff-possition {
   font-size: 15px;
   color: #ff6701;
   margin-top: -2em;
+}
+.line-diveder {
+  border-top-style: solid;
+  color: black;
+  width: 100%;
+  margin-top: 12em;
+  opacity: 0.5;
+  margin-bottom: 5em;
 }
 </style>
