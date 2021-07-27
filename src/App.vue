@@ -4,6 +4,7 @@
     <MobileMenu @showQuote="toggleQuoteBox" />
     <Quoteform @showQuote="toggleQuoteBox" v-if="showQuote" />
     <router-view @showQuote="toggleQuoteBox" />
+    <ContactUs />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import NavMenu from "./components/NavMenu";
 import MobileMenu from "./components/MobileMenu.vue";
 import Quoteform from "./components/Quote.vue";
+import ContactUs from "./components/contact-us.vue";
 export default {
   name: "App",
 
@@ -22,7 +24,8 @@ export default {
   components: {
     NavMenu,
     MobileMenu,
-    Quoteform
+    Quoteform,
+    ContactUs
   },
   methods: {
     toggleQuoteBox(info) {

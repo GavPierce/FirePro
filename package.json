@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/icons": "^4.11.2",
     "@splidejs/vue-splide": "^0.3.5",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",

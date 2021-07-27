@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="Aboutus">
+  <div style="padding-top: 5em;">
+    <div class="Aboutus" >
       <div class="about">ABOUT</div>
       <div class="us">US</div>
     </div>
@@ -86,11 +86,6 @@
         <p class="staff-name">Charles JANE</p>
         <p class="staff-possition">KITCHEN SUPPRESION</p>
       </div>
-      <div>
-        <img class="staff" src="../assets/img/member4.png" alt="" />
-        <p class="staff-name">KING SAM</p>
-        <p class="staff-possition">FIRE EXTINGUISHERS EXPERT</p>
-      </div>
     </div>
     <div class="line-diveder"></div>
   </div>
@@ -107,7 +102,6 @@ export default {};
   padding-top: 0em;
   display: flex;
   margin-left: 4em;
-  margin-top: 7em;
 }
 .about {
   font-size: 50px;
@@ -160,10 +154,13 @@ export default {};
   .auright {
     display: none;
   }
+  .auleft {
+    width: 100%;
+  }
 }
 
 .description {
-  margin-top: 12em;
+  margin-top: 2em;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -188,12 +185,13 @@ p.descritext {
 }
 .team {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   color: #000000;
-  margin-top: 7em;
+  margin-top: 2em;
 }
 .members {
   display: flex;
+  justify-content: center;
 }
 .staff {
   width: 200px;
@@ -216,10 +214,8 @@ p.staff-possition {
 }
 .line-diveder {
   border-top-style: solid;
-  color: black;
-  width: 100%;
-  margin-top: 12em;
-  opacity: 0.5;
-  margin-bottom: 5em;
+  color: rgba(0, 0, 0, 0.323);
+  width: 75%;
+  margin: 2em auto;
 }
 </style>

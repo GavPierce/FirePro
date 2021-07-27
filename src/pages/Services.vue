@@ -158,19 +158,8 @@ p.alarms {
   margin-right: 2em;
   margin-top: 5em;
 }
-.boxoffer {
-  position: relative;
-  margin-top: 25em;
-  display: flex;
-}
 
-.rectangule {
-  width: 750px;
-  height: 200px;
-  border-top: 100px solid #00000010;
-  border-right: 100px solid transparent;
-  margin-left: 3em;
-}
+
 @media screen and (max-width: 1285px) {
   .rectangule {
     margin-left: 0em;
@@ -195,13 +184,7 @@ p.alarms {
   font-size: 30px;
   color: #f4f0ea;
 }
-.textoffer {
-  top: 0em;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-}
+
 .textoffer2 {
   top: 0em;
   height: 100px;

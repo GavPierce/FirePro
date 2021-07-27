@@ -1,14 +1,16 @@
 <template>
   <div class="Navmenu">
-    <div class="brand">
-      <router-link to="/"
+          <router-link to="/"
       >
+    <div class="brand">
+
         <img class="mainlogo" src="../assets/logo/Logo-no-background.png" alt=""/>
 
-    </router-link>
-            <div class="company-name">Service Pro</div>
+          <div class="company-name">Service Pro</div>
+
     </div>
-    
+                  </router-link>
+
     <div class="items">
       <div class="item">
         <router-link to="/Services"><strong>SERVICES</strong></router-link>

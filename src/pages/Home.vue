@@ -83,11 +83,12 @@
         </div>
       </div>
     </div>
-    <div class="boxoffer">
+    <div class="wrapper-boxoffer">
+      <div class="boxoffer">
       <div class="rectangule">
         <div class="textoffer">
           <p style="font-size:2vw;">
-            WE OFFER PROFESIONAL FIRE PROTECTION SERVICES
+           THE DIFFERENCE IS SERVICE
           </p>
         </div>
       </div>
@@ -98,6 +99,8 @@
         </div>
       </div>
     </div>
+    </div>
+
     <div class="AU">
       <div class="ab1">ABOUT</div>
       <div class="ab2">US</div>
@@ -251,7 +254,7 @@ export default {
   font-size: 45px;
   position: relative;
   display: flex;
-  top: -2em;
+  top: -3em;
 }
 
 .title {
@@ -268,30 +271,28 @@ export default {
 }
 
 .button {
-  background-color: orangered;
+  background-color: #FF6701;
   color: #f4f0ea;
   font-size: 25px;
   width: 9em;
-  height: 2em;
   z-index: 100;
   margin-left: 2em;
   cursor: pointer;
   border-radius: 33px;
-  padding: 0.3em 1em 0 1em;
+  padding: .3em 1em;
   margin-top: 1em;
 }
 
 .certificates {
   margin-top: 1.75em;
   display: flex;
-justify-content: center;
+  justify-content: center;
   width: 100%;
 }
-.certs {
+.certs {  
   display: flex;
   position: relative;
-  margin-top: 1em;
-  width: 190px;
+  width: 240px;
   height: 120px;
 }
 @media screen and (max-width: 1300px) {
@@ -300,25 +301,26 @@ justify-content: center;
   }
 }
 .image1 {
-  margin-left: 0.9em;
-  margin-top: -0em;
+height: 4em;
+position: absolute;
+left: .8em;
 }
 .image2 {
-  margin-left: 0.6em;
-  margin-top: -0em;
+height: 4em;
+position: absolute;
+left: .3em;
 }
 .image3 {
-  margin-left: 0.7em;
-  margin-top: -0em;
-  width: 110px;
-  height: 120px;
+  height: 1.5em;
+  position: absolute;
+  top: 1em;
 }
 
 .leaves {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  margin-top: -0.3em;
+position: absolute;
+height: 4.6em;
+right: .3em;
+top: -10px;
 }
 
 .background {
@@ -387,15 +389,19 @@ justify-content: center;
 .offerbox-link {
   color: #FF6701;
 }
+.wrapper-boxoffer {
+  widows: 100%;
+}
 .boxoffer {
   position: relative;
-  margin-top: 5em;
   display: flex;
+  margin: 8em auto;
+  width: min-content;
+  max-width: 90vw;
 }
 
 .rectangule {
   width: 750px;
-  height: 200px;
   border-top: 100px solid #00000010;
   border-right: 100px solid transparent;
   margin-left: 3em;
@@ -426,11 +432,14 @@ justify-content: center;
 }
 .textoffer {
   top: 0em;
+  left: 4em;
   height: 100px;
   display: flex;
+  text-align: center;
   align-items: center;
   position: absolute;
 }
+
 .textoffer2 {
   top: 0em;
   height: 100px;
@@ -439,10 +448,9 @@ justify-content: center;
   position: absolute;
 }
 .AU {
-  border-top-style: solid;
-  color: #fea82f;
+  border-top: solid 5px #FFC288;
   width: 8em;
-  margin-top: -7em;
+  margin-top: 2em;
   display: flex;
   margin-left: 4em;
 }
@@ -479,10 +487,9 @@ justify-content: center;
   }
 }
 .OW {
-  border-top-style: solid;
-  color: #fea82f;
+  border-top: solid 5px #FFC288;
   width: 7em;
-  margin-right: 5em;
+  margin-right: 10em;
   display: flex;
   position: relative;
 }
@@ -500,7 +507,7 @@ justify-content: center;
 .below-ow {
   position: relative;
   margin-top: 2em;
-  margin-right: 5em;
+  margin-right: 10em;
   display: flex;
   justify-content: flex-end;
 }
@@ -582,10 +589,11 @@ p.yo {
   margin-top: 1.5em;
 }
 .Testimonial {
-  border-top-style: solid;
-  color: #fea82f;
-  width: 11.5em;
-  margin-top: 5em;
+  border-top: solid 5px #FFC288;
+  width: 8em;
+
+
+margin-top: 5em;
   margin-left: 3em;
 }
 .Testimonial p {
@@ -600,6 +608,7 @@ p.yo {
 .testbox {
   width: 300px;
   height: 300px;
+  padding: 0 1em;
   border: solid 1px #ffffff;
   box-shadow: 0px 15px 30px #b8b7b7;
   border-radius: 40px;
@@ -632,10 +641,10 @@ p.opinion {
   justify-content: flex-end;
 }
 .CU {
-  border-top-style: solid;
-  color: #fea82f;
+  border-top: solid 5px #FFC288;
+
   width: 10.5em;
-  margin: 4em 3em 0 0;
+  margin: 4em 10em 0 0;
   display: flex;
   position: relative;
   justify-self: flex-end;

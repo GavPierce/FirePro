@@ -13,6 +13,7 @@ import "@splidejs/splide/dist/css/themes/splide-sea-green.min.css";
 Vue.use(VueSplide);
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
+
 const routes = [
   { path: "/", component: Home },
   { path: "/about-us", component: AboutUs },
