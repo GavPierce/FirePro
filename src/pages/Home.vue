@@ -650,8 +650,8 @@ p.yo {
 }
 .slider img {
   height: 20em;
-  width: 50em;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
 }
 
 .box2 {

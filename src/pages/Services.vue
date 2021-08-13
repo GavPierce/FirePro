@@ -61,7 +61,7 @@
     </div>
     <div class="boxoffer">
       <div class="rectangule">
-        <div class="textoffer">
+        <div class="textoffer services-box">
           <p class="">
             WE OFFER PROFESIONAL FIRE PROTECTION SERVICES
           </p>
@@ -283,7 +283,9 @@ padding-bottom: 1em;
   position: absolute;
 }
 
-
+    .services-box {
+    font-size: .9em;
+  }
 @media (max-width: 900px) {
   .Intro-Text {
     margin-right: 0em;
@@ -298,10 +300,16 @@ padding-bottom: 1em;
   .our-distributors {
     margin-right: 2em;
   }
+  .services-box {
+    max-width: 20em;
+  }
 }
 @media (max-width: 1240px) {
   .Intro-Text {
     width: 80%;
+  }
+    .services-box {
+    font-size: .7em;
   }
 }
 @media (max-width: 1315px) {
@@ -313,6 +321,10 @@ padding-bottom: 1em;
 @media (max-width: 400px) {
   .our-distributors {
     margin-right: 0;
+  }
+      .services-box {
+    font-size: .75em;
+    max-width: 17em;
   }
  }
 </style>
