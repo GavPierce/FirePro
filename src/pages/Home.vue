@@ -793,7 +793,7 @@ p.opinion {
   }
   .textoffer2 {
     width: min-content;
-    right: -7px;
+    right: 7px;
   }
 }
 </style>
