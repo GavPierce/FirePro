@@ -791,5 +791,9 @@ p.opinion {
   .textoffer {
     left: 0em;
   }
+  .textoffer2 {
+    width: min-content;
+    right: -7px;
+  }
 }
 </style>
