@@ -787,7 +787,7 @@ p.opinion {
     margin: 1em;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 550px) {
   .textoffer {
     left: 0em;
   }
