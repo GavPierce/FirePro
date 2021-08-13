@@ -61,7 +61,7 @@ h6 {
   font-weight: bold;
 }
 .close {
-  left: 5em;
+  left: 4em;
   top: 1em;
 }
 .label {

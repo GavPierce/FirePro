@@ -114,7 +114,7 @@ a:hover {
   height: 70px;
   margin: 1px 4px;
   cursor: pointer;
-  margin-left: 3em;
+  margin-left: 2em;
 }
 .company-name {
   color:#b91e24;

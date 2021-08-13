@@ -297,6 +297,7 @@ export default {
   }
   },
   mounted() {
+    this.scrollToTop();
   }
 };
 </script>
@@ -784,6 +785,11 @@ p.opinion {
   }
   .text {
     margin: 1em;
+  }
+}
+@media (max-width: 350px) {
+  .textoffer {
+    left: 0em;
   }
 }
 </style>
