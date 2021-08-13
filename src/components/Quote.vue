@@ -45,7 +45,7 @@ export default {
   line-height: 0;
   margin: 0;
   padding: 2 em;
-  border-radius: 2em;
+  border-radius: 1em;
   color: #ffffff;
   z-index: 10;
 }
@@ -78,7 +78,7 @@ h6 {
   padding: 1.5em;
   width: min-content;
   border-radius: 1.5em;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 input {
   width: 60%;

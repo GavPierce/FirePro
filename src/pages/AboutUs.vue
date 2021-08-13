@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top: 5em;">
+  <div class="wrapper">
     <div class="Aboutus" >
       <div class="about">ABOUT</div>
       <div class="us">US</div>
@@ -14,17 +14,15 @@
           </p>
         </div>
         <div class="paragraph">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-          vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla
-          facilisi.Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit,
-          sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-          aliquam erat volutpat.
+Service Pro Fire Protection  understands the demands placed on business owners and managers to maintain compliance and protect their employees, customers, and property can be overwhelming.
+ Our goal is to offer a tailored program for each customer’s unique challenges.
+As a full-service fire protection company, Service Pro Fire Protection can address all your fire protection needs.
+ We take pride in knowing our fire protection systems offer the maximum level of safety and effectiveness. Service Pro Fire Protection is committed to meet or exceed your expectations every day. 
+Through our experienced and licensed personnel, we offer 24-hours a day, 365 days a year services to fit your needs.
+
+<br>
+<br>
+We are located in Southern California and provide Fire Protection and Fire Safety Services for all of Ventura County.
         </div>
       </div>
 
@@ -35,35 +33,24 @@
     <div class="description">
       <div>
         <p class="benefits">EXPERT MEMBERS</p>
-        <p class="descritext">
-          Lorem ipsum dolor sit amet,<br />
-          consectetuer adipiscing elit,<br />
-          sed diam nonummy nibh euismod
+        <p class="descritext">  
+          The Service Pro Fire Protectin team has <br>
+          decades of hands on expierience in the field.
         </p>
       </div>
       <div>
-        <p class="benefits">SATISFIED CLIENT</p>
+        <p class="benefits">Licensed Specialty</p>
         <p class="descritext">
-          Lorem ipsum dolor sit amet,<br />
-          consectetuer adipiscing elit,<br />
-          sed diam nonummy nibh euismod
-        </p>
-      </div>
-
-      <div>
-        <p class="benefits">BEST QUALIFIED TEAM</p>
-        <p class="descritext">
-          Lorem ipsum dolor sit amet,<br />
-          consectetuer adipiscing elit,<br />
-          sed diam nonummy nibh euismod
+Service Pro Fire Protection’s California Contractors 
+<br>
+            License Specialties include C-16 Fire Protection.
         </p>
       </div>
       <div>
         <p class="benefits">GREAT PRODUCTS</p>
         <p class="descritext">
-          Lorem ipsum dolor sit amet,<br />
-          consectetuer adipiscing elit,<br />
-          sed diam nonummy nibh euismod
+          We offer not only the highest quality service,<br />
+          but the highest quality certified products.
         </p>
       </div>
     </div>
@@ -73,18 +60,18 @@
     <div class="members">
       <div>
         <img class="staff" src="../assets/img/member1.png" alt="" />
-        <p class="staff-name">JOHN SMITH</p>
-        <p class="staff-possition">DESIGN EXPERT</p>
+        <p class="staff-name">Roberto Ceron</p>
+        <p class="staff-possition">CFO</p>
       </div>
       <div>
         <img class="staff" src="../assets/img/member2.png" alt="" />
-        <p class="staff-name">AMBER ARES</p>
+        <p class="staff-name">Mark Halden</p>
         <p class="staff-possition">CEO</p>
       </div>
       <div>
         <img class="staff" src="../assets/img/member3.png" alt="" />
-        <p class="staff-name">Charles JANE</p>
-        <p class="staff-possition">KITCHEN SUPPRESION</p>
+        <p class="staff-name">Jose Montejano</p>
+        <p class="staff-possition">Project Manager</p>
       </div>
     </div>
     <div class="line-diveder"></div>
@@ -92,7 +79,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+    mounted() {
+    this.scrollToTop();
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0,0);
+    }
+  }
+};
 </script>
 <style>
 .Aboutus {
@@ -101,7 +97,7 @@ export default {};
   width: 13em;
   padding-top: 0em;
   display: flex;
-  margin-left: 4em;
+  margin-left: 6em;
 }
 .about {
   font-size: 50px;
@@ -116,7 +112,7 @@ export default {};
 .resume {
   border-left: solid;
   color: #000000;
-  margin-left: 2em;
+  margin-left: 3em;
   font-size: 30px;
   margin-top: 3em;
   padding-left: 15px;
@@ -129,12 +125,11 @@ export default {};
 .paragraph {
   text-align: start;
   font-size: 20px;
-  margin-left: 3em;
+  margin-left: 4em;
   margin-right: 6em;
 }
 .autop {
   display: flex;
-  padding-top: 3em;
 }
 
 .tools {
@@ -171,11 +166,11 @@ export default {};
   margin-right: 3em;
 }
 p.descritext {
-  font-size: 10px;
+  font-size: .7em;
   color: #000000;
   text-align: center;
   margin-left: 10px;
-  margin-top: -2em;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 800px) {
@@ -192,14 +187,17 @@ p.descritext {
 .members {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.members img {
+  object-fit: cover;
 }
 .staff {
   width: 200px;
   height: 200px;
   justify-content: space-between;
-  margin-left: 5em;
-  margin-right: 3em;
-  margin-top: 7em;
+
+  margin: 5em 1em 0em 1em;
   border-radius: 50%;
 }
 p.staff-name {
@@ -217,5 +215,17 @@ p.staff-possition {
   color: rgba(0, 0, 0, 0.323);
   width: 75%;
   margin: 2em auto;
+}
+@media screen and (max-width: 600px) {
+  .Aboutus {
+    margin-left: 2em;
+  }
+  .resume {
+    margin-left: 1em;
+  }
+  .paragraph {
+    margin-left: 2em;
+    width: 90%;
+  }
 }
 </style>

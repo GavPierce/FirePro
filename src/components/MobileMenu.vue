@@ -32,13 +32,13 @@
         <router-link to="/about-us">ABOUT US</router-link>
       </div>
       <div class="item" v-on:click="isOpen = false">
-        <router-link to="/Work">WORK</router-link>
+        <router-link :to="{ path:'/', hash:'#work'}">WORK</router-link>
       </div>
       <div class="item" v-on:click="isOpen = false">
-        <router-link to="/Testimonial">TESTIMONIAL</router-link>
+        <router-link :to="{ path:'/', hash:'#testimonial'}">TESTIMONIAL</router-link>
       </div>
       <div class="item" v-on:click="isOpen = false">
-        <router-link to="/contact-us">CONTACT US</router-link>
+        <router-link :to="{ path:'/', hash:'#contact'}">CONTACT US</router-link>
       </div>
       <div class="item" v-on:click="open">
        <div class="phone-number">805-487-1477</div>

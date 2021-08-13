@@ -18,12 +18,12 @@
       <div class="item">
         <router-link to="/about-us">ABOUT US</router-link>
       </div>
-      <div class="item"><router-link to="/Work">WORK</router-link></div>
+      <div class="item"><router-link :to="{ path:'/', hash:'#work'}"> WORK</router-link></div>
       <div class="item">
-        <router-link to="/Testimonial">TESTIMONIAL</router-link>
+        <router-link :to="{ path:'/', hash:'#testimonial'}">TESTIMONIAL</router-link>
       </div>
       <div class="item">
-        <router-link to="/contact-us">CONTACT US</router-link>
+        <router-link :to="{ path:'/', hash:'#contact'}">CONTACT US</router-link>
       </div>
       <div class="phone" v-on:click="open">805-487-1477</div>
     </div>
@@ -49,7 +49,7 @@ export default {
   display: flex;
   text-decoration: none;
   top: 1em;
-  margin: 1em 175px;
+  margin: 1em;
   position: sticky;
   z-index: 99;
   width: 90%;

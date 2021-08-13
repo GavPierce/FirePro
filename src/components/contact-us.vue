@@ -36,7 +36,7 @@
             <div style="margin: 2em 0;">info@serviceprofire.com</div>
 
         </div>
-        <div class="footer"></div>
+        <div class="footer">©{{new Date().getFullYear()}} Service Pro Fire Protection</div>
     </div>
 </template>
 <script>
@@ -47,14 +47,14 @@ export default {
 <style scoped>
 .wrapper {
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 .contact-box {
     width: 60%;
     margin: 0 auto;
     position: relative;
-
 }
+
 .top-triangle {
     position: absolute;
     right: 0;
@@ -123,6 +123,41 @@ input {
     justify-content: space-around;
     text-align: left;
     font-weight: bold;
+    margin-bottom: 3em;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1050px) {
+    .contact-box {
+        width: 90%;
+    }
+    .form-box {
+        width: 100% !important;
+        right: 0 !important;
+    }
+    .left-form {
+        width: 100%;
+    }
+    .top-triangle {
+    border-left: 75vw solid transparent;
+	border-right: 10vw solid transparent;
+	border-bottom: 60px solid #00000010;
+    }
+    .bottom-triangle {
+    left: .2em;
+    border-left: 66vw solid transparent;
+	border-right: 23vw solid transparent;
+	border-top: 120px solid #00000010;
+    }
+    .send-button {
+    position: relative;
+    top: -6em;
+    right: 8em;
+    width: 10em;
+    border-radius: 2em;
+    background-color: #FF6701;
+    cursor: pointer;
+    color: white;
+}
 }
 </style>

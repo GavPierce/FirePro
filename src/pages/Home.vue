@@ -31,71 +31,123 @@
         />
       </div>
     </div>
+
     <div class="offers">
-      <div class="offerbox">  
-        <div class="offerbox-title">SPRINKLERS</div> 
-        <div class="offerbox-content">
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod
+      <router-link to="/Services?activeService=0">
+        <div class="offerbox"> 
+          <div class="offerbox-title">SPRINKLERS</div>
+            <div class="offerbox-content">
+              <div class="offerbox-content-item">
+                Installation
+              </div>
+              <div class="offerbox-content-item">
+                Testing
+              </div>
+              <div class="offerbox-content-item">
+                Repairs
+              </div>
+          </div>
+          <div class="offerbox-link">
+            More >
+          </div> 
         </div>
-        <div class="offerbox-link">
-          More >
+      </router-link>
+      <router-link to="/Services?activeService=1">
+        <div class="offerbox"> 
+          <div class="offerbox-title">ALARMS</div>
+            <div class="offerbox-content">
+              <div class="offerbox-content-item">
+                Installation
+              </div>
+              <div class="offerbox-content-item">
+                Testing
+              </div>
+              <div class="offerbox-content-item">
+                Replacing
+              </div>
+          </div>
+          <div  class="offerbox-link">
+            More >
+          </div> 
         </div>
-      </div>
-      <div class="offerbox"> 
-        <div class="offerbox-title">ALARMS</div> 
-          <div class="offerbox-content">
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod
-        </div>
-        <div class="offerbox-link">
-          More >
-        </div>
-      </div>
+      </router-link>
+      <router-link to="/Services?activeService=2">
       <div class="offerbox"> 
         <div class="offerbox-title">FIRE EXTINGUISHERS</div>
           <div class="offerbox-content">
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod
+            <div class="offerbox-content-item">
+              Recharging
+            </div>
+            <div class="offerbox-content-item">
+              Hydrotesting
+            </div>
+            <div class="offerbox-content-item">
+              Repair
+            </div>
         </div>
         <div class="offerbox-link">
           More >
         </div> 
       </div>
-      <div class="offerbox"> 
-        <div class="offerbox-title">KITCHEN SUPPRESION</div> 
-          <div class="offerbox-content">
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod
+      </router-link>
+      <router-link to="/Services?activeService=3">
+
+        <div class="offerbox"> 
+          <div class="offerbox-title">KITCHEN SUPPRESION</div> 
+            <div class="offerbox-content">
+              <div class="offerbox-content-item">
+                Pyro Chem
+              </div>
+              <div class="offerbox-content-item">
+                Amerex
+              </div>
+              <div class="offerbox-content-item">
+                Ansul
+              </div>
+              <div class="offerbox-content-item">
+                Buckeye
+              </div>
+          </div>
+          <div class="offerbox-link">
+            More >
+          </div>
         </div>
-        <div class="offerbox-link">
-          More >
-        </div>
-      </div>
+      </router-link>
+
+      <router-link to="/Services?activeService=4">
+
       <div class="offerbox"> 
         <div class="offerbox-title"> BACKFLOW</div>
           <div class="offerbox-content">
-           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod
+            <div class="offerbox-content-item">
+              Testing
+            </div>
+            <div class="offerbox-content-item">
+              Repairs
+            </div>
+            <div class="offerbox-content-item">
+              Installations
+            </div>
+
         </div>
         <div class="offerbox-link">
           More >
         </div>
       </div>
+      </router-link>
     </div>
     <div class="wrapper-boxoffer">
       <div class="boxoffer">
       <div class="rectangule">
         <div class="textoffer">
-          <p style="font-size:2vw;">
+          <p >
            THE DIFFERENCE IS SERVICE
           </p>
         </div>
       </div>
-
       <div class="triangle" v-on:click="open">
         <div class="textoffer2">
-          <p style="font-size:2vw;">REQUEST A QUOTE</p>
+          <p>REQUEST A QUOTE</p>
         </div>
       </div>
     </div>
@@ -107,23 +159,17 @@
     </div>
     <div class="AU-TEXT">
       <p class="text">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-        zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum
-        dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
-        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Providing Design, Installation, Testing, Inspection, Maintenance, and Repair for a variety of Fire Protection and Fire Safety related equipment.
+        As a company we provide excellent service, take care of all our customers and treat them with respect and dignity, because we believe the difference is service!
       </p>
       <p class="word">SERVICE PRO.</p>
     </div>
-    <div class="subtitle">
-          <div class="OW">
-      <div class="ow1">WORK</div>
+    <div id="work"></div>
+    <div class="subtitle" >
+    <div class="OW">
       <div class="ow2">OUR</div>
+      <div class="ow1">WORK</div>
+
     </div>
     </div>
 
@@ -165,9 +211,12 @@
         </splide-slide>
       </splide>
     </div>
-    <div class="Testimonial">
-      <p>TESTIMONIAL</p>
+    <div class="testimonial-wrapper"  id="testimonial">
+      <div class="Testimonial">
+      <p>TESTIMONIALS</p>
     </div>
+    </div>
+
 
     <div class="Rating">
       <!-- Font Awesome Icon Library -->
@@ -220,7 +269,7 @@
         </p>
       </div>
     </div>
-    <div class="subtitle">
+    <div class="subtitle" id="contact">
       <div class="CU">
         <div class="cu1">CONTACT</div>
         <div class="cu2">US</div>
@@ -242,7 +291,12 @@ export default {
     open() {
       console.log("from home button");
       this.$emit("showQuote", true);
-    }
+    },
+    scrollToTop() {
+      window.scrollTo(0,0);
+  }
+  },
+  mounted() {
   }
 };
 </script>
@@ -286,14 +340,14 @@ export default {
 .certificates {
   margin-top: 1.75em;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 .certs {  
   display: flex;
   position: relative;
   width: 240px;
-  height: 120px;
+  margin: 0 .25em;
 }
 @media screen and (max-width: 1300px) {
   .certificates {
@@ -303,21 +357,21 @@ export default {
 .image1 {
 height: 4em;
 position: absolute;
-left: .8em;
+left: 1.2em;
 }
 .image2 {
 height: 4em;
 position: absolute;
-left: .3em;
+left: .7em;
 }
 .image3 {
-  height: 1.5em;
-  position: absolute;
-  top: 1em;
+height: 1.5em;
+left: .5em;
+position: absolute;
+top: 1.25em;
 }
 
 .leaves {
-position: absolute;
 height: 4.6em;
 right: .3em;
 top: -10px;
@@ -355,36 +409,42 @@ top: -10px;
 }
 
 .offers {
-  margin-top: -2em;
   display: flex;
   position: relative;
-  margin-right: 60px;
   text-align: inherit;
   background: white;
   color: #000000;
-  margin-bottom: 1em;
   flex-wrap: wrap;
   font-size: 13px;
-  margin-left: 60px;
+  justify-content: center;
 }
 
 .offerbox {
-  width: 180px;
-  height: 190px;
-  margin-left: 40px;
+  width:250px;
+  height: 250px;
   border: solid 1px #fea82f;
-  box-shadow: 0px 15px 30px #b8b7b7;
   border-radius: 40px;
-  margin-top: 20px;
-  margin: 20px auto;
+  box-shadow: 0px 15px 30px #b8b7b7;
+  transition: all .2s ease-in-out; 
   cursor: pointer;
+  margin: 1em;
+}
+.offerbox:hover {
+  transform: scale(1.2);
 }
 .offerbox-title {
   font-weight: bold;
   margin-top: 1em;
+  font-size: 1.4em;
+ 
 }
 .offerbox-content {
-  margin: 2em 0;
+  margin: .5em 1em;
+  font-size: 1.3em;
+}
+.offerbox-content-item {
+    border-bottom: 1px solid #fea82f;
+    padding: .4em;
 }
 .offerbox-link {
   color: #FF6701;
@@ -404,18 +464,56 @@ top: -10px;
   width: 750px;
   border-top: 100px solid #00000010;
   border-right: 100px solid transparent;
-  margin-left: 3em;
 }
 @media screen and (max-width: 1285px) {
   .rectangule {
-    margin-left: 0em;
+    margin-left: 0;
   }
 }
 .rectangule p {
-  font-size: 30px;
-  margin-left: 20px;
+  font-size: 2em;
+}
+.triangle p {
+  font-size: 2em;
+
+}
+@media screen and (max-width: 760px) {
+  .rectangule p {
+   font-size: 1.5em;
+  }
+  .triangle p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 580px) {
+  .rectangule p {
+   font-size: 1em;
+  }
+  .textoffer {
+    right: 1em;
+  }
+  .triangle p {
+    font-size: 1em;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .rectangule p {
+   font-size: 1em;
+  }
+  .triangle p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .rectangule p {
+   font-size: .75em;
+    
+  }
+  .triangle p {
+        transform: translate(-10px);
+  }
+}
 .triangle {
   width: 350px;
   height: 50px;
@@ -427,19 +525,20 @@ top: -10px;
 }
 
 .triangle p {
-  font-size: 30px;
   color: #f4f0ea;
 }
 .textoffer {
   top: 0em;
-  left: 4em;
+  left: 1em;
   height: 100px;
   display: flex;
-  text-align: center;
+  text-align: left;
   align-items: center;
   position: absolute;
 }
-
+p.textoffer {
+  font-size: 1em;
+}
 .textoffer2 {
   top: 0em;
   height: 100px;
@@ -449,56 +548,53 @@ top: -10px;
 }
 .AU {
   border-top: solid 5px #FFC288;
-  width: 8em;
+  width: 200px;
   margin-top: 2em;
   display: flex;
-  margin-left: 4em;
+  margin-left: 6em;
 }
 .ab1 {
-  font-size: 30px;
+  font-size: 50px;
   color: #000000;
 }
 .ab2 {
-  font-size: 20px;
+  font-size: 30px;
   color: #000000;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
 .AU-TEXT {
   display: flex;
+  justify-content: space-between;
 }
 
 .text {
   text-align: start;
-  margin-left: 4em;
+  margin-left: 6em;
   margin-top: 1em;
-  margin-right: 2em;
+  max-width: 40em;
 }
 .word {
   color: #fea82f;
   font-size: 90px;
   margin: 0;
-  margin-right: 3em;
+  margin-right: 1.5em;
 }
 
-@media (max-width: 700px) {
-  .word {
-    font-size: 40px;
-  }
-}
+
 .OW {
   border-top: solid 5px #FFC288;
-  width: 7em;
+  width: 200px;
   margin-right: 10em;
   display: flex;
   position: relative;
 }
 .ow1 {
-  font-size: 30px;
+  font-size: 50px;
   color: #000000;
 }
 .ow2 {
-  font-size: 20px;
+  font-size: 30px;
   color: #000000;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -516,14 +612,13 @@ top: -10px;
     flex-direction: column-reverse;
   }
   .word {
-    margin: 0 auto;
+    margin: 1em auto;
   }
   .OW {
     margin-right: 3em;
   }
   .below-ow {
-   margin-right: 0em;
-
+   margin-right: 3em;
   }
 }
 .box1 {
@@ -550,6 +645,8 @@ p.yo {
   font-size: 10px;
   margin-right: 3em;
   font-weight: bold;
+}
+.slider {
 }
 .slider img {
   height: 20em;
@@ -590,20 +687,23 @@ p.yo {
 }
 .Testimonial {
   border-top: solid 5px #FFC288;
-  width: 8em;
+  width: 250px;
+  margin-top: 0em;
+  margin-left: 6em;
+}
 
-
-margin-top: 5em;
-  margin-left: 3em;
+.testimonial-wrapper {
+  padding-top: 7em;
 }
 .Testimonial p {
-  font-size: 30px;
+  font-size: 50px;
   color: #000000;
   margin-top: 0em;
 }
 .Rating {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .testbox {
   width: 300px;
@@ -637,26 +737,53 @@ p.opinion {
   color: #000000;
 }
 .subtitle {
+  padding-top: 7em;
   display: flex;
   justify-content: flex-end;
 }
 .CU {
   border-top: solid 5px #FFC288;
 
-  width: 10.5em;
+  width: 250px;
   margin: 4em 10em 0 0;
   display: flex;
   position: relative;
   justify-self: flex-end;
 }
 .cu1 {
-  font-size: 30px;
+  font-size: 50px;
   color: #000000;
 }
 .cu2 {
-  font-size: 20px;
+  font-size: 30px;
   color: #000000;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+@media (max-width: 700px) {
+  .word {
+    font-size: 40px;
+  }
+  .Testimonial {
+    margin-left: 1em;
+  }
+  .CU {
+    margin: 0 auto;
+  }
+  .AU {
+    margin: 1em;
+  }
+  .OW {
+    margin: 1em;
+  }
+  .below-ow {
+    margin: 1em;
+  }
+  .slider {
+    max-width: 100vw;
+  }
+  .text {
+    margin: 1em;
+  }
 }
 </style>
